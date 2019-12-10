@@ -7,3 +7,8 @@ Diagram order:
 * Diagram 12: Problem solving process (Main)
 * Diagram 14: Independent variable(feature) and Dependent variable(label)
 * Diagram 13: Gathering data from multiple sources and aggregating it
+* Diagram 15: Decide on type of output you are predicting is for **narrowing down the algorithm**
+    * Classification: Value of labels belong to a discrete set. Example in Diagram 16
+    * Regression: Value of labels belong to a continuous set. Example in Diagram 17
+* Diagram 18: Entire walkthrough of example
+* **Diagram 19**: Problem Solving process
