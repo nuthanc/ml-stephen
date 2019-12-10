@@ -12,3 +12,9 @@ Diagram order:
     * Regression: Value of labels belong to a continuous set. Example in Diagram 17
 * Diagram 18: Entire walkthrough of example
 * **Diagram 19**: Problem Solving process
+
+## App Overview: Plinko
+Diagram link: https://www.draw.io/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/01/diagrams.xml
+
+Diagram order:
+* Diagram 20: Goal of the application
