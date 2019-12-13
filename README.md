@@ -1,21 +1,49 @@
-# ML Kits
+# ml-stephen
+Diagram link: https://www.draw.io/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FStephenGrider%2FMLCasts%2Fmaster%2Fdiagrams%2F00%2Fdiagrams.xml
 
-Starter projects for learning about Machine Learning.
+Diagram order:
+* Diagram 1: ML example
+* Diagram 4: Analyst who predicts flood damage cost based on amount of rainfall
+* Diagram 12: Problem solving process (Main)
+* Diagram 14: Independent variable(feature) and Dependent variable(label)
+* Diagram 13: Gathering data from multiple sources and aggregating it
+* Diagram 15: Decide on type of output you are predicting is for **narrowing down the algorithm**
+    * Classification: Value of labels belong to a discrete set. Example in Diagram 16
+    * Regression: Value of labels belong to a continuous set. Example in Diagram 17
+* Diagram 18: Entire walkthrough of example
+* **Diagram 19**: Problem Solving process
 
-## Downloading
+## App Overview: Plinko
+Diagram link: https://www.draw.io/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/01/diagrams.xml
+* App path: MLKits/plinko/index.html
+* Open it in MAC using: open index.html
 
-There are two ways to download this repository - either as a zip or by using git.
+Diagram order:
+* Diagram 20: Goal of the application,i.e. which bucket does it fall based on from where it is dropped
 
-### Zip Download
+#### Problem solving process:
+* Identify **data that is relevant** to the problem, in the Plinko app's case, 
+    * Where the ball is being dropped(Drop Position)
+    * Which Bucket the ball falls into
+    * Range of Ball Bounciness
+    * Range of BAll Size
+    * Diagram 8: Features and Labels
+    * Features:
+        * Drop Position
+        * Ball Bounciness
+        * Ball Size
+    * Labels:
+        * Bucket a ball lands in
+* Assemble data related to the problem
+    * How datasets are stored in js
+        * Array of Objects(Dictionaries): Diagram 20
+        * Array of Arrays: Diagram 21
+            * In this approach, index represents the **features**
+    * Record data from the balldrop
+        * Finally some code
+        * onScoreUpdate is the function which gets called when the ball falls into a bucket
+        * Made some updates in that file
+    
 
-To download this project as a zip file, find the green 'Clone or Download' button on the top right hand side. Click that button, then download this project as a zip file.
 
-Once downloaded extract the zip file to your local computer.
-
-### Git Download
-
-To download this project using git, run the following command at your terminal:
-
-```
-git clone https://github.com/StephenGrider/MLKits.git
 ```
