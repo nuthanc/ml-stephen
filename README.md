@@ -42,7 +42,7 @@ Diagram order:
     * Record data from the balldrop
         * Finally some code
         * onScoreUpdate is the function which gets called when the ball falls into a bucket
-        * Made some updates in that file
+        * Made some updates in score.js
     
 
 
