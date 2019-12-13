@@ -43,7 +43,12 @@ Diagram order:
         * Finally some code
         * onScoreUpdate is the function which gets called when the ball falls into a bucket
         * Made some updates in score.js
-    
-
-
-```
+* **Type** of output
+    * It's a classification problem as it has a finite set of buckets
+    * Diagram 21: Classification
+* Pick an algorithm for classification
+    * K-Nearest Neighbor(knn) algorithm: Diagram 13
+    * Diagram 14: Birds of a feather flock together
+    * Diagram 9, 10, 11: More about knn
+    * Looking at other observations which are very close in nature, predict the output
+    * Diagram 14: Inner workings of knn
