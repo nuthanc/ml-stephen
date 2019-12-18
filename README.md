@@ -52,3 +52,27 @@ Diagram order:
     * Diagram 9, 10, 11: More about knn
     * Looking at other observations which are very close in nature, predict the output
     * Diagram 14: Inner workings of knn
+        * Diagram 11: With only one independent feature
+        * If the ball is dropped at pos 300, then look for positions which are near, in the table it's 275 and 325
+        * Diagram 15,16,17,18
+        * Diagram link for lodash: https://www.draw.io/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/02/diagrams.xml
+        * Diagram 00: loadash docs and playground link
+        * Some loadash methods we frequently use are:
+            * sortBy
+            * _.sortyBy(numbers, function(row){return row[1]})
+            * Or using ES2015 syntax, _.sortyBy(numbers, (row)=> row[1])
+            * And map function to extract only the second elements
+            * _.map(sorted, row => row[1])
+            * chain method and end it with value()
+            * example of chain
+                * _.chain(numbers).sortBy(row => row[1]).map(row => row[1]).value()
+            * As seen here, no need to pass numbers to all the other functions as it passed implicitly
+    * Implementation of knn
+        * Diagram link: https://www.draw.io/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/02/diagrams.xml
+        * Diagram 3: steps with bounciness and size ignored and subtracted value from 300 and bucket number is on RHS
+        * Diagram 5: sortBy 
+        * Diagram 6: slice : for example get elements from 0th index upto kth index but not k
+        * Code src link: https://www.draw.io/#G1jF0ZgYBj9219rjeEfNEwx4RxGRl0K8mi
+        * Diagram 7 to 12: Other utility methods used
+        * Diagram 13: Interpreting bad results
+        * Diagram 14: Need to have some way to get accuracy not only at dropPoint 300 but any drop point
