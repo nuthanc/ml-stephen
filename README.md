@@ -76,3 +76,8 @@ Diagram order:
         * Diagram 7 to 12: Other utility methods used
         * Diagram 13: Interpreting bad results
         * Diagram 14: Need to have some way to get accuracy not only at dropPoint 300 but any drop point
+        * Diagram 15: Finding an ideal K
+            * Creating a training set and test set
+            * knn from training set is used to predict the test set's bucket and check if the results match
+            * If the results match, then it is kept, else discarded
+        
