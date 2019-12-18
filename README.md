@@ -80,4 +80,6 @@ Diagram order:
             * Creating a training set and test set
             * knn from training set is used to predict the test set's bucket and check if the results match
             * If the results match, then it is kept, else discarded
-        
+        * Writing splitDataset function inside score.js to split the data into test set and training set
+            * The data needs to be shuffled because if dropped manually from left to right, then if we take the left half as training set and right half as test set, we are going to get some ridiculous results
+
