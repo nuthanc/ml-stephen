@@ -84,4 +84,22 @@ Diagram order:
             * The data needs to be shuffled because if dropped manually from left to right, then if we take the left half as training set and right half as test set, we are going to get some ridiculous results
         * Passing testSet's bucket to distance along with trainingSet's bucket
         * In runAnalysis, for each testSet predicting the bucket with the help of all the elements in the training set
+        * Refactor for loop within runAnalysis using lodash method
+            * Use chain method
+            * filter method
+                * If {} are used, then return knn should be done
+                * Since {} is removed, it is automatically returned
+            * let numberCorrect = 0;\
+                for(let i = 0; i < testSet.length; i++) {\
+                    const bucket = knn(trainingSet, testSet[i][0]);\
+                    if (bucket === testSet[i][3])\
+                    numberCorrect++;\
+                }
+            * The above can be refactored to the below:
+            * const accuracy = _.chain(testSet)\
+                .filter(testPoint => knn(trainingSet, testPoint[0]) === testPoint[3])\
+                .size()\
+                .divide(testSetSize)\
+                .value()
+        
 
