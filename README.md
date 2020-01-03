@@ -69,13 +69,14 @@ Diagram order:
             * As seen here, no need to pass numbers to all the other functions as it passed implicitly
     * Implementation of knn
         * Diagram link: https://www.draw.io/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/02/diagrams.xml
-        * Diagram 3: steps with bounciness and size ignored and subtracted value from 300 and bucket number is on RHS
-        * Diagram 5: sortBy 
-        * Diagram 6: slice : for example get elements from 0th index upto kth index but not k
-        * Code src link: https://www.draw.io/#G1jF0ZgYBj9219rjeEfNEwx4RxGRl0K8mi
-        * Diagram 7 to 12: Other utility methods used
-        * Diagram 13: Interpreting bad results
-        * Diagram 14: Need to have some way to get accuracy not only at dropPoint 300 but any drop point
+        * knn function
+            * Diagram 3: steps with bounciness and size ignored and subtracted value from 300 and bucket number is on RHS
+            * Diagram 5: sortBy 
+            * Diagram 6: slice : for example get elements from 0th index upto kth index but not k
+            * Code src link: https://www.draw.io/#G1jF0ZgYBj9219rjeEfNEwx4RxGRl0K8mi
+            * Diagram 7 to 12: Other utility methods used
+            * Diagram 13: Interpreting bad results
+            * Diagram 14: Need to have some way to get accuracy not only at dropPoint 300 but any drop point
         * Diagram 15: Finding an ideal K
             * Creating a training set and test set
             * knn from training set is used to predict the test set's bucket and check if the results match
@@ -83,23 +84,37 @@ Diagram order:
         * Writing splitDataset function inside score.js to split the data into test set and training set
             * The data needs to be shuffled because if dropped manually from left to right, then if we take the left half as training set and right half as test set, we are going to get some ridiculous results
         * Passing testSet's bucket to distance along with trainingSet's bucket
-        * In runAnalysis, for each testSet predicting the bucket with the help of all the elements in the training set
-        * Refactor for loop within runAnalysis using lodash method
-            * Use chain method
-            * filter method
-                * If {} are used, then return knn should be done
-                * Since {} is removed, it is automatically returned
-            * let numberCorrect = 0;\
-                for(let i = 0; i < testSet.length; i++) {\
-                    const bucket = knn(trainingSet, testSet[i][0]);\
-                    if (bucket === testSet[i][3])\
-                    numberCorrect++;\
-                }
-            * The above can be refactored to the below:
-            * const accuracy = _.chain(testSet)\
-                .filter(testPoint => knn(trainingSet, testPoint[0]) === testPoint[3])\
-                .size()\
-                .divide(testSetSize)\
-                .value()
+        * runAnalysis function
+            * In runAnalysis, for each testSet predicting the bucket with the help of all the elements in the training set
+            * Refactor for loop within runAnalysis using lodash method
+                * Use chain method
+                * filter method
+                    * If {} are used, then return knn should be done
+                    * Since {} is removed, it is automatically returned
+                * let numberCorrect = 0;\
+                    for(let i = 0; i < testSet.length; i++) {\
+                        const bucket = knn(trainingSet, testSet[i][0]);\
+                        if (bucket === testSet[i][3])\
+                        numberCorrect++;\
+                    }
+                * The above can be refactored to the below:
+                * const accuracy = _.chain(testSet)\
+                    .filter(testPoint => knn(trainingSet, testPoint[0]) === testPoint[3])\
+                    .size()\
+                    .divide(testSetSize)\
+                    .value()
+            * Picking Optimal K Value
+                * Using lodash range method instead of for loop
+                * All the below are done using 10 balls at 10px spacing,i.e., drop a bunch at various spots
+                * Delete the hard-coded const k=3
+                * Use forEach for different values of k
+                * Increasing testSetSize to 50 resulted in 0.28,0.14 etc
+                * Keep changing k and testSetSize until a get a good prediction
+                * Let's now change testSetSize to 100 and k to 20
+                * Observations: For k around 7, accuracy remains stable or increasing
+                * Let's take the sweet spot of 10
+                * Let's now try **1 ball** every **1px**
+                * Now the accuracy drops compared to previous one.
+                * Here too, check the sweet spot. For this problem, 10 seems fine
         
 
