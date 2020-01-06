@@ -116,5 +116,18 @@ Diagram order:
                 * Let's now try **1 ball** every **1px**
                 * Now the accuracy drops compared to previous one.
                 * Here too, check the sweet spot. For this problem, 10 seems fine
+    * Tuning
+        * Diagram link: https://www.draw.io/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/02/diagrams.xml
+        * Diagram 13
+        * Add more features
+        * Taking into account multiple variables in addition to dropPosition
+        * Diagram 17: knn with multiple variables
+            * The only step that changes is the **distance calculation**
+            * Diagram 19: Taking only dropPosition into account
+                * Take all the Training set balls and drop them in the Arrow
+                * Take the Prediction point also and drop it in the Arrow
+                * Whichever is near to it, if k=1, then the nearest one's bucket is taken
+            * Diagram 16: Taking bounciness also into account
+            * Diagram 19: Use pythagorean theorem
         
 
