@@ -124,10 +124,18 @@ Diagram order:
         * Diagram 17: knn with multiple variables
             * The only step that changes is the **distance calculation**
             * Diagram 19: Taking only dropPosition into account
+                * Here Prediction point is like Test point
                 * Take all the Training set balls and drop them in the Arrow
                 * Take the Prediction point also and drop it in the Arrow
                 * Whichever is near to it, if k=1, then the nearest one's bucket is taken
             * Diagram 16: Taking bounciness also into account
             * Diagram 19: Use pythagorean theorem
-        
+            * Diagram 20: Pythagorus theorem implementation
+                * Difference in Drop Position squared
+                * Difference in Bounciness squared 
+                * Add them and take Square root
+            * Diagram 21: Adding ball size as well
+                * Need to add C term as well, where C is the difference in the Ball Size metric
+            * As more variables are added, we put more the difference squared term
+    
 
