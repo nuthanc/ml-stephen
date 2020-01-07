@@ -137,5 +137,19 @@ Diagram order:
             * Diagram 21: Adding ball size as well
                 * Need to add C term as well, where C is the difference in the Ball Size metric
             * As more variables are added, we put more the difference squared term
-    
+    * Refactor of knn and distance function to work with any arbitrary number of features
+        * distance function
+            * pointA and pointB now might be an array like [300, .5, 16]
+            * Example:
+                * const pointA = [1,1]; const pointB = [4,5];
+                * _.chain(pointA).zip(pointB) gives [[1,4],[1,5]]
+                * Then use .map(pair => (pair[0] - pair[1]))
+                    * Instead of using pair[0] and pair[1]
+                    * Destructure using ES2015 syntax
+                    * .map(([a,b]) => (a-b) ** 2)
+                * .sum()
+                * .value() ** 0.5;
+                * We can use the above code for any number of parameters in pointA and pointB
+            * Use the above code in distance function
+            
 
