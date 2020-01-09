@@ -151,5 +151,24 @@ Diagram order:
                 * .value() ** 0.5;
                 * We can use the above code for any number of parameters in pointA and pointB
             * Use the above code in distance function
+        * Example of more lodash functions
+            * const point = [350, 0.5, 16, 4]
+            * _.initial(point) returns [350, 0.5, 16, 4]
+            * _.last(point) returns 4
+            * We could have used pop method of point, but it modifies point array
+            * We don't want this as we might need to reference original point again
+        * point in distance function's argument refers to testSet's dropPosition. Refer Diagram 15
+            * Now we don't want _.initial(point) as label might not be provided for custom features(Points of our own)
+            * The above is in knn function
+            * But we can modify point in the runAnalysis itself
+    * Try again with the analysis
+        * For some initial k, the accuracy was increased
+        * Bounciness factor is not getting added as appropriately needed
+        * Diagram 20: Gap between Bounciness and DropPosition in not the same
+        * Diagram 21 shows the actual distance
+        * According to this, Point B in Diagram 20 is not the closest one as seen in Diagram 21
+        * This means that the contribution from the Distance is a huge factor than Bounciness
+
+
             
 
