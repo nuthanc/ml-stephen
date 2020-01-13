@@ -57,7 +57,7 @@ Diagram order:
         * Diagram 15,16,17,18
         * Diagram link for lodash: https://www.draw.io/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/02/diagrams.xml
         * Diagram 00: loadash docs and playground link
-        * Some loadash methods we frequently use are:
+        * Some lodash methods we frequently use are:
             * sortBy
             * _.sortyBy(numbers, function(row){return row[1]})
             * Or using ES2015 syntax, _.sortyBy(numbers, (row)=> row[1])
@@ -168,7 +168,40 @@ Diagram order:
         * Diagram 21 shows the actual distance
         * According to this, Point B in Diagram 20 is not the closest one as seen in Diagram 21
         * This means that the contribution from the Distance is a huge factor than Bounciness
+        * Diagram 23: Bounciness having negligent effect
+    * Scaling: Diagram 24 : 
+        * Strategies to get good prediction accuracy 
+            * Normalization: 
+                * Consider 1 feature at a time
+                * Between 0 and 1
+            * Standardization: 
+                * Similar to Normalization
+                * But base everything around the value of 0
+                * Normal distribution 
+        * For this problem, let's consider Normalization
+            * Diagram 27-minmax: 
+                * Take one feature at a time like ballDrop
+                * Diagram 28: Example 
+                * playground.js Example
+            * Diagram 25 and 26: No change in the outcome with and Without Normalization 
+        * minMax function in score.js
+            * featureCount: How many features we want and we don't want to add everything as the last column is the label
+            * We are cloning outputs array to data, as we don't want to modify the outputs array
+            * Nested for loop for Normalization
+                * The outer loop for columns and the inner for rows
+                * column is for column extraction which will be array of numbers
+            * For checking this, go to Console of Chrome
+                * Shift Enter in Console without processing of line to get new line
+        * Modify runAnalysis function to use minMax Scaling
+    * After scaling, we find that accuracy drops to even 0.08 which is less than Random guessing which 0.1
+    * Diagram 27-feat: 
+        * Drop Position change is Predictable
+        * Ball Bounciness change is Non-predictable
+            * It doesn't aid us
+            * Not considering this is a good idea
+    * Feature Selection: Deciding **which feature** to include in analysis
+        * Diagram 29-knn: Analysis based on running only 1 feature set and comparing it
+    
 
 
-            
 
