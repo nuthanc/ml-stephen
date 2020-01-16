@@ -200,7 +200,21 @@ Diagram order:
             * It doesn't aid us
             * Not considering this is a good idea
     * Feature Selection: Deciding **which feature** to include in analysis
+        * Diagram link: https://www.draw.io/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/02/diagrams.xml
         * Diagram 29-knn: Analysis based on running only 1 feature set and comparing it
+        * Fix k=10 and then make changes for feature in runAnalysis
+        * Move splitDataset within range function
+        * data in runAnalysis will be having same structure as in Diagram 29-knn
+        * splitDataset for data and only 1 feature
+        * testPoint[3] is changed to 
+        * After dropping 10 every 10, analyze
+            * For feature of 0(dropPostion) accuracy is 0.26
+            * For feature of 1(bounciness) accuracy is 0.13
+            * For feature of 2(ballsize) accuracy is 0.11
+        * Ballsize and bounciness may change the result but do not allow us to accurately predict the results
+    * End of Introduction: Diagram 32boot
+
+
     
 
 
