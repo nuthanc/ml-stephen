@@ -212,9 +212,14 @@ Diagram order:
             * For feature of 1(bounciness) accuracy is 0.13
             * For feature of 2(ballsize) accuracy is 0.11
         * Ballsize and bounciness may change the result but do not allow us to accurately predict the results
-    * End of Introduction: Diagram 32boot
+* End of Introduction: Diagram 32-boot
 
-
+#### Loadash and Tensorflow
+* Diagram link: https://www.draw.io/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/02/diagrams.xml
+* Advantages and Disadvantages of Lodash:Diagram 30features
+* Tensorflow: Diagram 31-tf
+* Tensorflow Plan: Diagram 32-plan
+* Diagram 33-algs: Some question
     
 
 
