@@ -56,7 +56,7 @@ Diagram order:
         * If the ball is dropped at pos 300, then look for positions which are near, in the table it's 275 and 325
         * Diagram 15,16,17,18
         * Diagram link for lodash: https://www.draw.io/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/02/diagrams.xml
-        * Diagram 00: loadash docs and playground link
+        * Diagram 00: lodash docs and playground link
         * Some lodash methods we frequently use are:
             * sortBy
             * _.sortyBy(numbers, function(row){return row[1]})
@@ -214,13 +214,32 @@ Diagram order:
         * Ballsize and bounciness may change the result but do not allow us to accurately predict the results
 * End of Introduction: Diagram 32-boot
 
-#### Loadash and Tensorflow
+#### Lodash and Tensorflow
 * Diagram link: https://www.draw.io/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/02/diagrams.xml
 * Advantages and Disadvantages of Lodash:Diagram 30features
 * Tensorflow: Diagram 31-tf
 * Tensorflow Plan: Diagram 32-plan
 * Diagram 33-algs: Some question
     
+#### Tensorflow as a library
+* Doc link: js.tensorflow.org and checkout API 
+* Diagram link: https://www.draw.io/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/03/diagrams.xml
+* Diagram 06-tf: Tensorflow's job
+* Tensor: Core unit in TF
+    * JS object that wraps a collection of numbers
+    * Diagram 2: Possible tensors
+* Diagram 3: Dimensions
+    * Example of 3d : Diagram 06-ed
+* Shape: Diagram 3-shape
+    * Diagram 4-trick: Trick to understand shape
+    * One time length for each dimension
+    * Example
+        * Diagram 4-shape
+        * Diagram 6-shape
+        * Diagram 7-shape
+* Why is Shape important: Diagram 4-struct
+    * Key is **Row, Column**
+* Shape of 2d Tensor: Diagram 05-mem
 
 
 
