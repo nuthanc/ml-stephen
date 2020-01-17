@@ -241,5 +241,21 @@ Diagram order:
     * Key is **Row, Column**
 * Shape of 2d Tensor: Diagram 05-mem
 
+#### Tensorflow exercise** done in playground.js
+* Diagram 09-add,10-sub: Element wise operation
+* If Shapes don't match: Diagram 11-sha
+    * Operation can still be done but there are some rules
+* Diagram 12-2d: 2d Operations
+* Diagram 17: Different shape operation can still be done
+    * This is called **Broadcasting**
+* Diagram 19-bro: Rule for Broadcasting
+    * Shapes are equal
+    * Or one of them has Shape of 1
+* Examples of Broadcasting
+    * Diagram 20-r
+    * Diagram 
+
+
+
 
 
