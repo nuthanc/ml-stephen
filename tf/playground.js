@@ -43,3 +43,36 @@ const data = tf.tensor([
   [12, 26, 63],
   [44, 59, 6]
 ]);
+data.slice([0,1], [10,1]); //data.slice([0,1], [data.shape[0], 1])
+// Alternatively data.slice([0,1], [-1, 1])
+
+// data.slice([4,1],[6,1])
+// Output: [[32], [25], [22], [55], [26], [59]];
+
+//Concatenation example
+const tensorA = tf.tensor([
+  [1, 2, 3],
+  [4, 5, 6]
+]);
+const tensorB = tf.tensor([
+  [4, 5, 6],
+  [1, 2, 3]
+]);
+tensorA.concat(tensorB)
+// Output: [[1, 2, 3], [4, 5, 6], [4, 5, 6], [1, 2, 3]]
+tensorA.concat(tensorB,1)
+// Output: [[1, 2, 3, 4, 5, 6], [4, 5, 6, 1, 2, 3]]
+
+//Jump Analysis
+const data = tf.tensor([
+  [70, 70, 70],
+  [70, 70, 70],
+  [70, 70, 70],
+  [70, 70, 70]
+]);
+const playerData = tf.tensorf([
+  [1, 160],
+  [2, 160],
+  [3, 160],
+  [4, 160],
+])

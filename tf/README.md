@@ -51,8 +51,25 @@
 ##### Access to Tensor data
 * print method for debugging purposes
 * get method as shown in playground.js
+* slice method: playground.js and Diagram 25-s
 * There are no ways to set an existing tensor, therefore new tensor should be made
+* Referencing Diagram 25-slice: Takes 2 arguments
+    * Start index
+    * Size: Array of Size and Width
+* Instead of using shape, -1 is used
+    * Here -1 gives all records in the particular dimension
+    * Most of the times we change only the column in the 1st argument of slice. Rest all remains the same
 
+##### More operations
+* Diagram 27-axis: Concatenation
+* Concat method has 2nd argument to specify which way to concatenate
+* Default 2nd argument is 0
+* Diagram 28-axis: More about 2nd argument of concat
+* Diagram 30: How to remember the axis system
+* Diagram 31: Athlete jump example
+* Diagram 32: Jump analysis
+    * Example shown in playground.js
+    * sum method
 
 
 
