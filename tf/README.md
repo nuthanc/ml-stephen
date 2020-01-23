@@ -69,9 +69,35 @@
 * Diagram 31: Athlete jump example
 * Diagram 32: Jump analysis
     * Example shown in playground.js
-    * sum method
-
-
+    * sum method 1st argument
+        * 1 for axis-1
+        * 0 for axis-0
+    * concat cannot be used because sum returns a 1d tensor
+    * sum method 2nd argument for keepDimension
+        * true for preserving dimensions
+    * Diagram 32,32: Why axis 1 and not 0
+    * Alternate method to sum 2ND DIMENSION
+        * expandDims: 1st argument for axis
+    
+#### knn with tensorflow
+* Diagram link: https://www.draw.io/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/04/diagrams.xml
+* Diagram 06-task: Steps
+* Diagram 04: Map
+    * If New House around some location, how much should that cost
+* Diagram 05: Regression problem
+* Diagram 03: knn(steps to be followed)
+    * Prediction point: Maybe latitude and longitude
+* Diagram 01: Data depicting features and labels and Prediction point
+* Diagram 07: Data structure used
+    * sum, multiply of tensors work on all elements
+    * So we don't want to modify the label
+* Data in playground.js
+* Diagram 08: Next step
+* Implementation in tf:
+    * Distance(sub): Diagram 02-dist
+    * Power(pow): Diagram 09-sqr
+    * Sum across axis 1: Diagram 10-sum
+    * Sqrt: Diagram 11-sqrt
 
 
 

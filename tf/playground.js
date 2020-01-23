@@ -64,15 +64,65 @@ tensorA.concat(tensorB,1)
 // Output: [[1, 2, 3, 4, 5, 6], [4, 5, 6, 1, 2, 3]]
 
 //Jump Analysis
-const data = tf.tensor([
+const jumpData = tf.tensor([
   [70, 70, 70],
   [70, 70, 70],
   [70, 70, 70],
   [70, 70, 70]
 ]);
-const playerData = tf.tensorf([
+const playerData = tf.tensor([
   [1, 160],
   [2, 160],
   [3, 160],
   [4, 160],
 ])
+jumpData.sum() //840
+jumpData.sum(1) //For axis 1, [210,210,210,210]
+jumpData.sum(0) //For axis 0, [280,280,280,280]
+jumpData.sum(1, true).concat(playerData, 1); 
+/* Output
+[
+  [210, 1, 160],
+  [210, 2, 160],
+  [210, 3, 160],
+  [210, 4, 160]
+];
+*/
+jumpData.sum(1).expandDims() 
+// [[210, 210, 210, 210],] and shape is [1,4]
+jumpData.sum(1).expandDims(1);
+// [[210], [210], [210], [210]] and shape is [4,1]
+jumpData
+  .sum(1)
+  .expandDims(1)
+  .concat(playerData, 1); 
+// [
+//   [210, 1, 160],
+//   [210, 2, 160],
+//   [210, 3, 160],
+//   [210, 4, 160]
+// ];
+
+
+// knn with tensorflow
+const features = tf.tensor([
+  [-121, 47],
+  [-121.2, 46.5],
+  [-122, 46.4],
+  [-120.9, 46.7]
+]);
+
+const labels = tf.tensor([
+  [200],
+  [250],
+  [215],
+  [240]
+]);
+
+const predictionPoint = tf.tensor([-121, 47]);
+
+features
+.sub(predictionPoint)
+.pow(2)
+.sum(1)
+.pow(0.5)
