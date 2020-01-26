@@ -98,6 +98,28 @@
     * Power(pow): Diagram 09-sqr
     * Sum across axis 1: Diagram 10-sum
     * Sqrt: Diagram 11-sqrt
+    * Problem with sorting: Diagram 13-sort
+    * Solution to this:
+        * expandDims and then Concat along axis 1: Diagram 12
+        * unstack: Diagram 14
+            * This will tensor for each row within a normal js array
+    * Then we will sort method builtin for arrays
+        * But we need to give proper sorting criteria
+        * Optional inner function does the trick
+        * This inner function takes 2 arguments, 1 for one of the item and the other is for the other item
+        * Then return 1 or -1 based on the condition
+    * After this, take the **top k** records, in our example case let's take k=2
+    * For this, we will normal js slice method
+    * Next, take the average and for this we use **reduce** method
+        * It takes acc which we will be given initial value by the 2nd argument
+        * The value returned will be the acc's next value
+        * The obj or pair(in our example) in the arrow function will be each item per iteration in the array
+    * Diagram 14 to check what's the second value in the pair
+        * It's the amount or value of the house in dollars
+    * Divide by k to get average
+        
+
+
 
 
 
