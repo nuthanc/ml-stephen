@@ -118,7 +118,8 @@
         * It's the amount or value of the house in dollars
     * Divide by k to get average
         
-
+#### Code implementation
+* See knn-tf folder
 
 
 
