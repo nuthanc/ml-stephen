@@ -30,3 +30,18 @@
     * k is the top k records
 * The variables from loadCSV are all arrays and not yet converted to tensors
 * Call knn with only one testFeature which serves as predictionPoint and then k as 10
+* Diagram Link: https://www.draw.io/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/04/diagrams.xml
+* Diagram 16-err: Error
+    ```
+    Error % with only lat and long as features
+    Error -30.98617511520737
+    Error -52.95661953727506
+    Error -9.552941176470588
+    Error -28.528495575221243
+    Error -6.069828722002635
+    Error -9.855653270993358
+    Error -11.176432291666668
+    Error 43.34094616639478
+    Error -19.536472310319592
+    Error -5.603238866396762
+    ```
