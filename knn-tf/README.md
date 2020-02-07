@@ -29,3 +29,4 @@
     * predictionPoint: The lat and long of the house of which we are trying to predict the price
     * k is the top k records
 * The variables from loadCSV are all arrays and not yet converted to tensors
+* Call knn with only one testFeature which serves as predictionPoint and then k as 10
