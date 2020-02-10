@@ -45,3 +45,16 @@
     Error -19.536472310319592
     Error -5.603238866396762
     ```
+
+##### Add Sqft_lot as another Feature
+* Add sqft_loft in dataColumns of loadCSV function in index.js
+* Now when we get *features*, it will include Sqft_lot column
+* We don't need to change anything as we have added functionality for multiple features beforehand
+* Before anything, we need to think about Normalization or Standardization
+* Diagram 17-knn: Huge gap in Normalization, so we go for Std Deviation
+* Diagram 18-standardization
+* Checkout playground.js 
+    * tf.moments for numbers tensor gives a variety of keys including mean and variance
+    * Std deviation is obtained by square root of variance
+    * By providing axis 0 as second argument, we get our desired result of column-wise mean and variance
+
