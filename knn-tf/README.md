@@ -58,3 +58,7 @@
     * Std deviation is obtained by square root of variance
     * By providing axis 0 as second argument, we get our desired result of column-wise mean and variance
 
+### Standardization directly inside knn function
+* First do standardization for predictionPoint
+* Then for all the features
+* It is not optimized yet as we calculate mean and variance of features every time we change the testPoint
