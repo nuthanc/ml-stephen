@@ -62,3 +62,18 @@
 * First do standardization for predictionPoint
 * Then for all the features
 * It is not optimized yet as we calculate mean and variance of features every time we change the testPoint
+
+### Debugging Calculations: Inspecting in Node 
+* node --inspect-brk index.js
+    * brk for break on the very 1st line of the code
+* Then on Chrome navigate to about:inspect
+* Click on Inspect
+* Progress code to knn function by Stepping over
+* Click on line number to add breakpoint
+* Click on Resume Script Execution to jump to breakpoint
+* Then on console, you can debug each variable
+    * predictionPoint.print()
+    * features.shape
+    * scaledPrediction.print()
+* By debugging each print of features till pow, we see that the values are close to zero and don't have any large values
+* This shows that we haven't written any bad code
