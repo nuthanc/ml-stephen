@@ -77,3 +77,8 @@
     * scaledPrediction.print()
 * By debugging each print of features till pow, we see that the values are close to zero and don't have any large values
 * This shows that we haven't written any bad code
+
+### Ways to increase accuracy
+* Do analysis and alter the value of k
+* Add more features in the dataColumns(sqft_living)
+* Now adding sqft_living we have Error percentage of under 20% which is not bad
