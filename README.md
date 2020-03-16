@@ -24,7 +24,7 @@ Diagram order:
 * Diagram 06-relation: More than 1 Independent variable
 * Google SpreadSheet: Select both Loft Size and House Price and **Insert** a Chart
     * Add Trendline
-    * Use Equation and volla you get the Equation
+    * Use Equation and voila you get the Equation
     * Limited to Single Independent variable with Single Dependent variable
 * Diagram 3-linear: Methods of Solving Linear Regression
     * We are gonna use Gradient Descent
@@ -78,7 +78,7 @@ Diagram order:
 * Demonstration: Diagram 31-c for x=-5
 
 ### Gradient Descent in Action
-* Diagram 33-mse: How Wrong Were we?
+* Diagram 33-mse: How Wrong Were we?(Slope equation)
     * Get slope by taking derivative of MSE
     * Assuming m=0
 * **Diagram 34-descent: Gradient Descent**
@@ -98,3 +98,30 @@ Diagram order:
     * But we are updating b in very small steps
     * So, update Learning rate to 0.01, 0.1, and finally 0.4
     * In 0.4 learning rate, we get to optimum value of b in very less steps
+
+### Quick Review
+* Diagram Link: https://www.draw.io/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/06/diagrams.xml
+* Diagram 04-why: **Quick summary of Gradient Descent**
+* Diagram 05-lr: If Slope is negative, the value of b must be higher
+    * when the slope becomes too small, that's the value of b we should take and no more iterations are required
+* Common Question: Diagram 01-hwys
+* Why are we using *slope*?
+    * Meaningful data: **It gives the direction**
+    * - for increasing the value of b
+    * + for decreasing the value of b
+    * The *initial slope adjustments are very high* but when it comes closer to *optimum value of b, adjustments are very less*
+* Without using learning rate and using slope only for direction(+ve or -ve), using countdown as 100 and divide that by 1.5 each step
+    * If 100 is at H2, in excel
+        * =H2/1.5
+    * To adjust b, the condition in excel
+        * =if(F2 > 0, 1, -1) * H2, where H2 is the countdown
+* Since **slope gives the direction and also has magnitude**, why can't we use only that and **not learning rate** along with it
+    * If slope is 488 and b is 1 and from this Diagram 5
+    * If we update b with only slope
+        * 1-(-488) = 489
+        * We overshoot the optimum value of b and we never converge
+* **Learning rate** is used to tame the value of the Adjustment value of b
+    * Its value depends on the nature of the Dataset we are working on
+* Link Chart: goo.gl/f4KdZj
+    * For MSE vs b
+    * Try with learning 0.5, and we see that we obtain Optimal value of b very quickly
