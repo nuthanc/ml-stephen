@@ -105,6 +105,8 @@ Diagram order:
 * Diagram 05-lr: If Slope is negative, the value of b must be higher
     * when the slope becomes too small, that's the value of b we should take and no more iterations are required
 * Common Question: Diagram 01-hwys
+
+### Why Learning Rate?
 * Why are we using *slope*?
     * Meaningful data: **It gives the direction**
     * - for increasing the value of b
@@ -125,3 +127,15 @@ Diagram order:
 * Link Chart: goo.gl/f4KdZj
     * For MSE vs b
     * Try with learning 0.5, and we see that we obtain Optimal value of b very quickly
+
+### Other 2 Common Questions
+* Diagram Link: https://www.draw.io/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/06/diagrams.xml
+* Diagram 01-hwys
+* https://docs.google.com/spreadsheets/d/1uWN6qSM6NovbOPjOmFTwvKooxj-9fmgz7rAguVkF-lw/edit#gid=528303167
+* Chart sheet in the above link
+* Why worry about derivatives? Just calculate MSE twice and compare two values
+    * Calculating the derivative is same as calculating MSE twice
+    * It comes with the added advantage of calculating only once
+* Diagram 3-zero: The other question of setting the slope to zero
+    * We made tremendous simplication by ignoring the value of m
+    * There are 2 unknowns in the equation
