@@ -139,3 +139,7 @@ Diagram order:
 * Diagram 3-zero: The other question of setting the slope to zero
     * We made tremendous simplication by ignoring the value of m
     * There are 2 unknowns in the equation
+
+### Gradient Descent with Multiple Terms
+* Diagram 09-slope
+* **Flow for Gradient Descent now**: Diagram 10-flow
