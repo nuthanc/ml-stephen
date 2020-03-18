@@ -157,3 +157,6 @@ Diagram order:
 * Check M+B completed sheet for the changes
 * From observation, we see that we had to change learning rate to suit to our taste
 * But in reality, we just keep a small arbitrary value of learning rate and just keep running Gradient descent for many iterations
+
+## Implementation of Gradient Descent
+* Checkout regressions folder
