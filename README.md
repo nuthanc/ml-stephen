@@ -143,3 +143,17 @@ Diagram order:
 ### Gradient Descent with Multiple Terms
 * Diagram 09-slope
 * **Flow for Gradient Descent now**: Diagram 10-flow
+
+### Multiple Terms In Action
+* My spreadsheet link: https://docs.google.com/spreadsheets/d/1uWN6qSM6NovbOPjOmFTwvKooxj-9fmgz7rAguVkF-lw/edit#gid=0
+* M+B empty sheet
+* Enter the same equation found in Diagram 09-slope for finding slope of m and b
+* We see very large numbers bouncing back and forth for learning rate of 0.01
+* So we'll put learning rate of 0.0000001
+    * For this, we see that the value of m seems to converge but the value of b never changes
+    * This happens when we don't scale the value of features
+    * So need to apply min-max or std-deviation method
+* Applying min-max, so all of the features get values between 0 and 1
+* Check M+B completed sheet for the changes
+* From observation, we see that we had to change learning rate to suit to our taste
+* But in reality, we just keep a small arbitrary value of learning rate and just keep running Gradient descent for many iterations
