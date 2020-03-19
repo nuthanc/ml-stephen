@@ -8,3 +8,15 @@
     * displacement: size of the engine
 * Diagram 01-d: Equation depicting relation between mpg and horsepower
 * Diagram 02-class: *Class structure* for the App
+
+### Data Loading
+* Make a new file called index.js under regressions
+* Require the libraries in index.js
+* Load the CSV file of cars using loadCSV
+    * Second argument will be an options object
+    * Next is to split the dataSet into testSet and trainingSet
+    * We want to have a ton of records in our trainingSet and a couple of records in the testSet
+    * testSet size of 50 records might be appropriate for our 393 records
+    * In machine learning, testSet for validating model's accuracy and trainingSet for predicting the label
+    * Which column to put into features and testFeatures from dataColumns
+    * labelColumns for what we are trying to predict
