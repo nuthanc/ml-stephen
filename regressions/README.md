@@ -34,3 +34,20 @@
 * We are gonna scaffold train method
 * This method is for getting good values of *m and b*
 * Provide iterations so that we can finally stop
+
+### Initial Gradient Descent Implementation
+* Diagram 3-mat: Initial Implementation of Slow Gradient descent
+* Diagram 4-use: Replace with much faster code
+* Define gradientDescent method
+* By convention, *initial guess* of 0 or 1 for m and b
+* Diagram link: Diagram Link: https://www.draw.io/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/06/diagrams.xml
+* Diagram 9-slope: How to **calculate slope of m and b**
+* Diagram Link: https://app.diagrams.net/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/07/diagrams.xml
+* Diagram 05-calcs: **Slope w.r.t b**
+* mx+b is the Guess or Prediction and Actual is the actual value
+* **Two stage calculations:**
+    * mx+b as it common for both b and m slopes
+    * Rest of the calculations
+* Features which is an array of arrays is all the horsepower values in our case
+
+
