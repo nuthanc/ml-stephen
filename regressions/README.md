@@ -20,3 +20,12 @@
     * In machine learning, testSet for validating model's accuracy and trainingSet for predicting the label
     * Which column to put into features and testFeatures from dataColumns
     * labelColumns for what we are trying to predict
+
+### Default Algorithm Options
+* Make a new file called linear-regression.js file under regressions
+* In this file, we only have to require tfjs library
+* That tfjs-node needs to be required only once, preferably in index.js or any other entry file
+* Create LinearRegression class and export it
+* Options to constructor will be iterations, learningRate etc
+* features and labels will be passed as tensors
+* Provide default options through Object.assign
