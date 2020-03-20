@@ -29,3 +29,8 @@
 * Options to constructor will be iterations, learningRate etc
 * features and labels will be passed as tensors
 * Provide default options through Object.assign
+
+### Formulating the Training Loop
+* We are gonna scaffold train method
+* This method is for getting good values of *m and b*
+* Provide iterations so that we can finally stop
