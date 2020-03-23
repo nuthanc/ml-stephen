@@ -28,6 +28,9 @@ class LinearRegression {
     const mslope = _.sum(currentGuessesForMPG.map((guess, i) => {
       return -1 * this.features[i][0] * (this.labels[i][0] - guess);
     })) * 2 / this.features.length;
+
+    this.m = this.m - mslope * this.options.learningRate;
+    this.b = this.b - bslope * this.options.learningRate;
   }
 
   train() {

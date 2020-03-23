@@ -54,4 +54,7 @@
 * bSlope and mSlope for slope w.r.t b and m
 * Import lodash for summing all the values in bslope and mslope
 
+### Updating Co-efficients
+* Update m and b
+* In index.js, require LinearRegression
 
