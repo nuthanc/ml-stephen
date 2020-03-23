@@ -50,4 +50,8 @@
     * Rest of the calculations
 * Features which is an array of arrays is all the horsepower values in our case
 
+### Calculating MSE slopes
+* bSlope and mSlope for slope w.r.t b and m
+* Import lodash for summing all the values in bslope and mslope
+
 
