@@ -1,5 +1,5 @@
 const tf = require('@tensorflow/tfjs');
-import _ from 'lodash';
+const _ = require('lodash');
 
 class LinearRegression {
   constructor(features, labels, options) {
@@ -16,7 +16,7 @@ class LinearRegression {
   }
 
   gradientDescent() {
-    currentGuessesForMPG = this.features.map(row => {
+    const currentGuessesForMPG = this.features.map(row => {
       return this.m * row[0] + this.b;
     });
 

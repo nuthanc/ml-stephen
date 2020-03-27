@@ -58,3 +58,19 @@
 * Update m and b
 * In index.js, require LinearRegression
 
+### Interpreting Results
+* In index.js, create an instance of LinearRegression class
+* Here learning rate is an arbitrary value and iterations is set to 1 to check the values
+* Call train method
+* node index.js in regressions directory
+* Check https://nodejs.org/api/esm.html#esm_enabling
+* Also stack overflow "node --experimental-modules, requested module does not provide an export named"
+* To solve ESM experimental errors
+    * npm i esm
+    * node -r esm index.js
+* Now let's dial up our iterations to 100 and check
+* We see that m and b are raised to 135 and 134 powers of 10
+* This is because our **learning rate is too large**
+* So let's change our learning rate to 10% of what is was previously by setting it to 0.0001
+* But even now, the values of m and b are big
+* We can continue to tweak our learning rate, but one other possible solution is min-max normalization or standardization

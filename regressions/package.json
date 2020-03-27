@@ -1,6 +1,7 @@
 {
   "name": "logistic_regression",
   "version": "1.0.0",
+  "type": "",
   "description": "",
   "main": "index.js",
   "scripts": {},
@@ -8,6 +9,7 @@
   "license": "ISC",
   "dependencies": {
     "@tensorflow/tfjs-node": "^0.1.17",
+    "esm": "^3.2.25",
     "lodash": "^4.17.15",
     "memoize": "^0.1.1",
     "mnist-data": "^1.2.6",
