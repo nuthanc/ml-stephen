@@ -74,3 +74,10 @@
 * So let's change our learning rate to 10% of what is was previously by setting it to 0.0001
 * But even now, the values of m and b are big
 * We can continue to tweak our learning rate, but one other possible solution is min-max normalization or standardization
+
+### Matrix Multiplication
+* Diagram 04: Using Tensorflow
+* Diagram 10: Goal
+    * Every single operation with Tensorflow method
+* Diagram 11, 12, 07, 08, 09, 10: Matrix Multiplication
+* Diagram 14, 15, 16: More Matrix Multiplication
