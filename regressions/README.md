@@ -81,3 +81,7 @@
     * Every single operation with Tensorflow method
 * Diagram 11, 12, 07, 08, 09, 10: Matrix Multiplication
 * Diagram 14, 15, 16: More Matrix Multiplication
+
+### Matrix Form Of Slope Equations
+* Diagram 9-updates: Calculating m and b slopes at the same time
+* How we walked from nasty looking code in Diagram 06 to Diagram 09-update
