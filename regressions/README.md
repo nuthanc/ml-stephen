@@ -85,3 +85,10 @@
 ### Matrix Form Of Slope Equations
 * Diagram 9-updates: Calculating m and b slopes at the same time
 * How we walked from nasty looking code in Diagram 06 to Diagram 09-update
+
+### Simplication with Matrix Multiplication
+* Rewrite gradientDescent with Matrix multiplication
+* Diagram Link: https://app.diagrams.net/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/07/diagrams.xml
+* Diagram 19-r, 20-c, 21-p: 
+    * Weights: Value which are calculated to relate featureset with labelset(In our case, it is m and b)
+    * Adding the 1 column for making it eligible for matrix multiplication
