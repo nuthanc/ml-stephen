@@ -103,3 +103,10 @@
     * The 1st row is slope of m without 2 and n
     * The 2nd row is slope of b without 2 and n
 * This refactor allows the addition of multiple features
+
+### Refactoring the Linear Regression Class
+* Diagram 11-steps: Steps for Refactoring
+* In linear-regression.js file, make the above mentioned changes
+* Concat by default is on 0 axis which is downwards and it does not update an existing tensor
+* In the above steps, the column of 1s is left of the featureset
+* While multipying, the order of m and b is changed to accomodate this

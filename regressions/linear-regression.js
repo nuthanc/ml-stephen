@@ -3,8 +3,12 @@ const _ = require('lodash');
 
 class LinearRegression {
   constructor(features, labels, options) {
-    this.features = features;
-    this.labels = labels;
+    this.features = tf.tensor(features);
+    this.labels = tf.tensor(labels);
+
+    this.features = tf
+      .ones([this.features.shape[0], 1])
+      .concat(this.features, 1);
 
     this.options = Object.assign(
       { learningRate: 0.1, iterations: 1000 },
@@ -20,14 +24,23 @@ class LinearRegression {
       return this.m * row[0] + this.b;
     });
 
-    const bslope = _.sum(currentGuessesForMPG.map((guess, i) => {
-      return guess - this.labels[i][0];
+    const bslope =
+      (_.sum(
+        currentGuessesForMPG.map((guess, i) => {
+          return guess - this.labels[i][0];
+        })
+      ) *
+        2) /
+      this.features.length;
 
-    })) * 2 / this.features.length;
-
-    const mslope = _.sum(currentGuessesForMPG.map((guess, i) => {
-      return -1 * this.features[i][0] * (this.labels[i][0] - guess);
-    })) * 2 / this.features.length;
+    const mslope =
+      (_.sum(
+        currentGuessesForMPG.map((guess, i) => {
+          return -1 * this.features[i][0] * (this.labels[i][0] - guess);
+        })
+      ) *
+        2) /
+      this.features.length;
 
     this.m = this.m - mslope * this.options.learningRate;
     this.b = this.b - bslope * this.options.learningRate;
