@@ -15,35 +15,17 @@ class LinearRegression {
       options
     );
 
-    this.m = 0;
-    this.b = 0;
+    this.weights = tf.zeros([2, 1]);
   }
 
   gradientDescent() {
-    const currentGuessesForMPG = this.features.map(row => {
-      return this.m * row[0] + this.b;
-    });
+    const currentGuesses = this.features.matMul(this.weights);
+    const differences = currentGuesses.sub(this.labels);
 
-    const bslope =
-      (_.sum(
-        currentGuessesForMPG.map((guess, i) => {
-          return guess - this.labels[i][0];
-        })
-      ) *
-        2) /
-      this.features.length;
-
-    const mslope =
-      (_.sum(
-        currentGuessesForMPG.map((guess, i) => {
-          return -1 * this.features[i][0] * (this.labels[i][0] - guess);
-        })
-      ) *
-        2) /
-      this.features.length;
-
-    this.m = this.m - mslope * this.options.learningRate;
-    this.b = this.b - bslope * this.options.learningRate;
+    const slopes = this.features
+      .transpose()
+      .matMul(differences)
+      .div(this.features.shape[0]);
   }
 
   train() {

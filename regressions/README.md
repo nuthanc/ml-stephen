@@ -110,3 +110,10 @@
 * Concat by default is on 0 axis which is downwards and it does not update an existing tensor
 * In the above steps, the column of 1s is left of the featureset
 * While multipying, the order of m and b is changed to accomodate this
+
+### Refactoring to One Equation
+* Replacing m and b with weights
+* Clear up the old gradientDescent
+* Diagram 09-updates: Referring to the equation
+* mul is element-wise operation and is different from matMul
+* From the original equation, **2 is omitted**, as this doesn't matter as we are gonna multiply with learning rate anyway
