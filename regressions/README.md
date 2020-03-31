@@ -92,3 +92,14 @@
 * Diagram 19-r, 20-c, 21-p: 
     * Weights: Value which are calculated to relate featureset with labelset(In our case, it is m and b)
     * Adding the 1 column for making it eligible for matrix multiplication
+
+### How it All works Together
+* Diagram link: https://app.diagrams.net/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/08/diagrams.xml
+* Diagram 06-all: **Slope of b and m**
+* Diagram 09-updates: **Slope of b and m using matrix operations**
+* Diagram 07-transpose: Entire calcuation in Tensors
+* Diagram 08, 09-trans: 
+* Diagram 10-trans: Comparing with Diagram 06-all
+    * The 1st row is slope of m without 2 and n
+    * The 2nd row is slope of b without 2 and n
+* This refactor allows the addition of multiple features
