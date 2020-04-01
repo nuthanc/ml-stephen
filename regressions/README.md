@@ -122,3 +122,7 @@
 * Anything we do to a tensor does not update the tensor as they are mutable
 * This is the **Vectorized implementation of Gradient Descent**
 * Now, after running 100 iterations with learningRate as 0.000, we get Updated m is 0.17875829339027405 Updated b is 0.04919028282165527
+
+### Same results or not
+* Last time, we ran with the same parameters mentioned above without Vectorized approach, we had gotten a different result
+* Cause in the non-vectorized approach, we multiplied by 2
