@@ -117,3 +117,8 @@
 * Diagram 09-updates: Referring to the equation
 * mul is element-wise operation and is different from matMul
 * From the original equation, **2 is omitted**, as this doesn't matter as we are gonna multiply with learning rate anyway
+
+### A few more changes
+* Anything we do to a tensor does not update the tensor as they are mutable
+* This is the **Vectorized implementation of Gradient Descent**
+* Now, after running 100 iterations with learningRate as 0.000, we get Updated m is 0.17875829339027405 Updated b is 0.04919028282165527
