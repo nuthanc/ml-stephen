@@ -126,3 +126,19 @@
 ### Same results or not
 * Last time, we ran with the same parameters mentioned above without Vectorized approach, we had gotten a different result
 * Cause in the non-vectorized approach, we multiplied by 2
+
+### Calculating Model Accuracy
+* Diagram Link: https://app.diagrams.net/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/08/diagrams.xml
+* Diagram 12-tset: Accuracy
+* Diagram 13-r2: Coefficient of Determination
+    * How good our Guess is with the Actual data
+    * Sum of Squared residual and total
+    * Range: -ve infinity to 1
+    * Value of 1 is perfect fit or relationship
+    * Diagram 15-eq: SS(tot) and SS(res)
+    * Diagram 14-tot:
+    * Diagram 16-tot:
+    * Diagram 15-res:
+    * Diagram 18-res:
+    * Diagram 20-r:
+    * If a negative number is obtained, it means that SS(tot)(mean line) is better than SS(res)
