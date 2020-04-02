@@ -185,3 +185,9 @@ features.sub(mean).div(variance.pow(0.5));
 // When this is run in the browser, we don't see -0.95 as before
 //Different environments for TensorFlow
 ```
+### Massaging Learning Rates
+* Increase learning rate to 0.1 and we get R2 is 0.6048565706121047
+* For 0.5 learning rate, just about the same
+* For 1 learning rate, same again
+* Bringing in other features to play to increase the accuracy
+
