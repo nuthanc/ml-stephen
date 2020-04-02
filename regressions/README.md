@@ -172,3 +172,16 @@
 * standardize method in LinearRegression
 * After standardization, R2 is -10.938349176819127
 
+### Fixing Standardization Issues
+* In index.js, after line of creating LinearRegression object, regression.features.print()
+* We see that the column of ones are also getting standardized
+* To fix this, add the concatenation step after the standardization
+* But still of R2 is bad as last time
+```js
+const features = tf.ones([10, 1]);
+const { mean, variance } = tf.moments(features, 0);
+
+features.sub(mean).div(variance.pow(0.5));
+// When this is run in the browser, we don't see -0.95 as before
+//Different environments for TensorFlow
+```
