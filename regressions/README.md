@@ -162,3 +162,7 @@
 * In order to improve, we do Data normalization(Min-Max) or Standardization(Std deviation and Mean)
 * tf.moments(Tensorflow library itself) return mean and variance
 * Same mean and variance for both **testFeatures and features**
+
+### Data Processing in a Helper Method
+* Diagram 22-sta: Helper method for appending ones and concatentation to features
+* So inside LinearRegression class, add processFeatures method
