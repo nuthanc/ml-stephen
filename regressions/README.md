@@ -142,3 +142,10 @@
     * Diagram 18-res:
     * Diagram 20-r:
     * If a negative number is obtained, it means that SS(tot)(mean line) is better than SS(res)
+
+### Implementing Coefficient of Determination
+* Diagram 12-tset: 
+* In LinearRegression class, add test function
+* Then do as before, Diagram 21-pre
+* Print test to see if it's calculating properly
+* Accuracy metric is more important than m and b values
