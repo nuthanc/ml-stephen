@@ -149,3 +149,10 @@
 * Then do as before, Diagram 21-pre
 * Print test to see if it's calculating properly
 * Accuracy metric is more important than m and b values
+
+### Dealing with Bad Accuracy
+* Diagram 15-eq: 
+* Diagram 13-r2:
+* Then assign the result to r2 in index.js and console log it
+* R2 is -3.0282662711232344
+* Res is larger than total and our prediction is so bad that even using Sum of squares(i.e mean) is better
