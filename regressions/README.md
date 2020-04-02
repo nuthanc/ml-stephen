@@ -166,3 +166,9 @@
 ### Data Processing in a Helper Method
 * Diagram 22-sta: Helper method for appending ones and concatentation to features
 * So inside LinearRegression class, add processFeatures method
+
+### Reapplying Standardization
+* Use the same mean and variance used for featureSet to testFeatures also
+* standardize method in LinearRegression
+* After standardization, R2 is -10.938349176819127
+
