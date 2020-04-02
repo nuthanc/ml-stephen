@@ -156,3 +156,9 @@
 * Then assign the result to r2 in index.js and console log it
 * R2 is -3.0282662711232344
 * Res is larger than total and our prediction is so bad that even using Sum of squares(i.e mean) is better
+
+### Reminder on Standardization
+* Our results from previous section were bad
+* In order to improve, we do Data normalization(Min-Max) or Standardization(Std deviation and Mean)
+* tf.moments(Tensorflow library itself) return mean and variance
+* Same mean and variance for both **testFeatures and features**
