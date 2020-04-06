@@ -198,3 +198,13 @@ features.sub(mean).div(variance.pow(0.5));
 * Diagram 23-features:
 * Diagram 24-multi, 25-sub, 26-xt, 27-multi:
 
+### Refactoring for Multivariate Analysis
+* Diagram 23-features:
+* In linear-regression.js, this.weights initiliazation change
+* In index.js, adding displacement and weight features
+* With learning rate of 1, we have R2 equal to -Infinity
+* Let's adjust the learning rate, starting from 0.01, 0.1, 0.5
+* We see for 0.5, it's decreasing. Going back to 0.1 and changing the number of iterations to 1000
+* We see that it's going back down again, so reducing the number of iterations or increasing the learning rate
+* Bringing in additional feature, R2 is 0.6609494788240404
+
