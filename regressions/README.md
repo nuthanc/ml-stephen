@@ -208,3 +208,9 @@ features.sub(mean).div(variance.pow(0.5));
 * We see that it's going back down again, so reducing the number of iterations or increasing the learning rate
 * Bringing in additional feature, R2 is 0.6609494788240404
 
+### Learning Rate Optimization
+* How to get better value of Learning Rate
+* Diagram Link: https://app.diagrams.net/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/09/diagrams.xml
+* Diagram 01-lr:
+* Diagram 02: **Learning Rate Optimization Methods**
+* Diagram 3: **Custom approach to Learning Rate Optimization**
