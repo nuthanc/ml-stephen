@@ -191,3 +191,10 @@ features.sub(mean).div(variance.pow(0.5));
 * For 1 learning rate, same again
 * Bringing in other features to play to increase the accuracy
 
+### Moving towards Multivariate Regression
+* Diagram Link: https://app.diagrams.net/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/08/diagrams.xml
+* Diagram 26-eq: **Multivariate Regression**
+* Diagram 27-multi: Univariate and Multivariate Regression
+* Diagram 23-features:
+* Diagram 24-multi, 25-sub, 26-xt, 27-multi:
+
