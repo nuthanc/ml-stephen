@@ -233,3 +233,7 @@ const secondLast = this.mseHistory[this.mseHistory.length - 2];
 * unshift is a *prepend operation*
 * Call updateLearningRate in train method
 
+### Observing Changing Learning Rate and MSE
+* To test out updateLearningRate, let's give a initial learning rate of 10 while instantiating the LinearRegression class
+* We see that R2 is 0.6581617545974641, which means the learningRate is adjusting itself even though we gave a crazy value
+* To see this, console.log in train method and mseHistory in index.js file
