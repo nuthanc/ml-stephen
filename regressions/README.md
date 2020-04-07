@@ -214,3 +214,10 @@ features.sub(mean).div(variance.pow(0.5));
 * Diagram 01-lr:
 * Diagram 02: **Learning Rate Optimization Methods**
 * Diagram 3: **Custom approach to Learning Rate Optimization**
+
+### Recording MSE history
+* Diagram 5-mse: Equatin of MSE
+* In linear-regression.js, recordMSE function
+* Record mse in an array
+* Call recordMSE right after calling gradientDescent inside train method
+* No need to call recordMSE inside test method because we are not updating weights anymore
