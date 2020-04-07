@@ -221,3 +221,15 @@ features.sub(mean).div(variance.pow(0.5));
 * Record mse in an array
 * Call recordMSE right after calling gradientDescent inside train method
 * No need to call recordMSE inside test method because we are not updating weights anymore
+
+### Updating Learning Rate
+* Diagram 3: 
+* updateLearningRate method in linear-regression.js file
+* Can use *unshift* instead of *push* in recordMSE method so that we don't have to do this.mseHistory.length - 1 and -2, which doesn't cleaner
+```js
+const lastValue = this.mseHistory[this.mseHistory.length - 1];
+const secondLast = this.mseHistory[this.mseHistory.length - 2];
+```
+* unshift is a *prepend operation*
+* Call updateLearningRate in train method
+
