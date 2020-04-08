@@ -237,3 +237,12 @@ const secondLast = this.mseHistory[this.mseHistory.length - 2];
 * To test out updateLearningRate, let's give a initial learning rate of 10 while instantiating the LinearRegression class
 * We see that R2 is 0.6581617545974641, which means the learningRate is adjusting itself even though we gave a crazy value
 * To see this, console.log in train method and mseHistory in index.js file
+
+### Plotting MSE values
+* In index.js, require node-remote-plot
+* Call plot with mseHistory and run node -r esm index.js
+* You'll see a plot file called plot.png
+* Provide xLabel and yLabel
+* Since we have the latest value of MSE in the front, we need to reverse the mseHistory in the plot to show the proper image
+* Initially small due to m and b being zero, but explodes because of the big learning rate, then the adjustments
+* More sensible with small learning rate like 0.1
