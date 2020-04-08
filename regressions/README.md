@@ -271,3 +271,25 @@ const secondLast = this.mseHistory[this.mseHistory.length - 2];
 * Diagram 11-train:
 * Pass batch size in index.js
 * Inside train method, add batchQuantity which defines the number of batches we have
+
+### Iterating Over Batches
+* Put gradientDescent in another for loop
+* Reminding slice
+```js
+const features = tf.tensor([
+    [1,2,3],
+    [1,2,3],
+    [4,2,3],
+    [5,4,3],
+    [1,2,3],
+    [1,2,3],
+])
+
+//The below will get the first 3 rows
+features.slice([0,0], [3,-1]);
+//1st argument co-ordinates of the start index
+//2nd arguemnt size of the slice(rows,cols) -1 to give all columns
+
+//This will get the next 3 rows
+features.slice([3,0], [3,-1]);
+```
