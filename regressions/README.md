@@ -259,3 +259,10 @@ const secondLast = this.mseHistory[this.mseHistory.length - 2];
 * Diagram 7-batch: Batch Gradient Descent
 * Diagram 8-sotch: Stochastic Gradient Descent(SGD)
 * Diagram 9-diff: Summary of all 3
+* Batch and Stochastic Gradient Descent converge faster as we are frequently updating the values of m and b
+
+### Refactoring Towards Batch Gradient Descent
+* All the matrix multiplication and equations remains the same, as we are only reducing the rows 
+* Diagram 7-all: Current Implementation
+* Diagram 8-methods: New Implementation
+* In linear-regression.js, in gradientDescent function, argument of features and labels
