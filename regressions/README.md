@@ -252,3 +252,10 @@ const secondLast = this.mseHistory[this.mseHistory.length - 2];
 * Then inside train method, push b which is present in weights
 * Back in index.js, x for b and y for MSE inside plot
 * After we are done, take out bHistory
+
+### Batch and Stochastic Gradient Descent
+* Diagram Link: https://app.diagrams.net/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/09/diagrams.xml
+* Diagram 6-flow: 
+* Diagram 7-batch: Batch Gradient Descent
+* Diagram 8-sotch: Stochastic Gradient Descent(SGD)
+* Diagram 9-diff: Summary of all 3
