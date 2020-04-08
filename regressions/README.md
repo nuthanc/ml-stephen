@@ -266,3 +266,8 @@ const secondLast = this.mseHistory[this.mseHistory.length - 2];
 * Diagram 7-all: Current Implementation
 * Diagram 8-methods: New Implementation
 * In linear-regression.js, in gradientDescent function, argument of features and labels
+
+### Determining Batch Size and Quantity
+* Diagram 11-train:
+* Pass batch size in index.js
+* Inside train method, add batchQuantity which defines the number of batches we have
