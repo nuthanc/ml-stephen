@@ -246,3 +246,9 @@ const secondLast = this.mseHistory[this.mseHistory.length - 2];
 * Since we have the latest value of MSE in the front, we need to reverse the mseHistory in the plot to show the proper image
 * Initially small due to m and b being zero, but explodes because of the big learning rate, then the adjustments
 * More sensible with small learning rate like 0.1
+
+### Plotting MSE history against B values
+* New array called bHistory inside the LinearRegression constructor
+* Then inside train method, push b which is present in weights
+* Back in index.js, x for b and y for MSE inside plot
+* After we are done, take out bHistory
