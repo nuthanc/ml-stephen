@@ -304,3 +304,15 @@ features.slice([3,0], [3,-1]);
 * To change to *Stochastic*, just change the batchSize to 1
 * We see R2 decrease
 * For some projects, Batch Gradient descent will be better and for some other vice versa
+
+### Making Predictions with the Model
+* Add predict method in LinearRegression class
+* observation as argument which is gonna be an array of arrays
+* *Matrix multiplication of Features and Weights represented mpg for that set of characteristics*
+* To get prediction, just add a column of 1s to observation tensor(which is standardized) and multiply with weights
+* This is where we use processFeatures which does exactly that and then multiply with weights
+* Call predict in index.js
+* **Order of observations same as dataColumns**
+* After training, we don't have to do the test step again and again, so we can comment out test
+
+
