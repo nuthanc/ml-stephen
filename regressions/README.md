@@ -293,3 +293,14 @@ features.slice([0,0], [3,-1]);
 //This will get the next 3 rows
 features.slice([3,0], [3,-1]);
 ```
+
+### Evaluating Batch Gradient Descent Results
+* Batch Doesn't make a huge difference with small datasets like 300 or 400 but makes a big impact with large datasets
+* Run the analysis and check the new plot
+* We see a tremendous decrease in MSE even after the 1st iteration
+* Let's change the iterations to 3
+    * With this, we notice it ran much faster
+    * Also R2 also improved
+* To change to *Stochastic*, just change the batchSize to 1
+* We see R2 decrease
+* For some projects, Batch Gradient descent will be better and for some other vice versa
