@@ -315,4 +315,7 @@ features.slice([3,0], [3,-1]);
 * **Order of observations same as dataColumns**
 * After training, we don't have to do the test step again and again, so we can comment out test
 
-
+### Introducing Logistic Regression
+* Diagram Link: https://app.diagrams.net/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/11/diagrams.xml
+* Diagram 1: Logistic Regression(Discrete values)
+* Diagram 2-bin:
