@@ -342,4 +342,10 @@ features.slice([3,0], [3,-1]);
 * Diagram 9-trend and Diagram 11-vals: 
     * Optimum values of m and b at .57 and 11.1 respectively
     * m and b calculated with the same steps as linear regression
-    
+
+### Decision Boundaries
+* Diagram 11-vals: Gradual shift
+* Diagram 12-vals: 
+* Diagram 19-Page: **Output of Sigmoid equation**
+* Diagram 17-boundary:
+    * For safety analysis Decision boundary can be changed to 0.99 instead of 0.5
