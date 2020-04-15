@@ -349,3 +349,7 @@ features.slice([3,0], [3,-1]);
 * Diagram 19-Page: **Output of Sigmoid equation**
 * Diagram 17-boundary:
     * For safety analysis Decision boundary can be changed to 0.99 instead of 0.5
+
+### Changes for Logistic Regression
+* Diagram 22-flow: **Linear Regression**
+* Diagram 23-flow: **Logistic Regression**
