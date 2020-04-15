@@ -335,3 +335,11 @@ features.slice([3,0], [3,-1]);
 * Diagram 10-range:
 * **Eqn mx+b doesn't fit here**
 
+### The Sigmoid Equation
+* Diagram 10-range:
+* Diagram 17-good: **Eqn**
+* Diagram 9-sigmoid: Always value between 0 and 1
+* Diagram 9-trend and Diagram 11-vals: 
+    * Optimum values of m and b at .57 and 11.1 respectively
+    * m and b calculated with the same steps as linear regression
+    
