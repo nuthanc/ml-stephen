@@ -327,3 +327,11 @@ features.slice([3,0], [3,-1]);
 * Diagram 5-data:
 * Diagram 6-encoded:
 * Diagram 7-eqn: **Reminder**
+
+### Bad Equation Fits
+* Diagram 7-eqn:
+* Diagram 8-trend:
+* Diagram 9-trend: Range outside of 0 and 1 not good
+* Diagram 10-range:
+* **Eqn mx+b doesn't fit here**
+
