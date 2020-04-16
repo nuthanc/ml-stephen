@@ -361,3 +361,6 @@ features.slice([3,0], [3,-1]);
 
 ### Importing Vehicle Data
 * Create index.js and logistic-regression.js inside logistic-regression folder
+
+### Encoding Label Values
+* Converters option in loadCSV for encoding label values
