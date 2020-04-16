@@ -353,3 +353,8 @@ features.slice([3,0], [3,-1]);
 ### Changes for Logistic Regression
 * Diagram 22-flow: **Linear Regression**
 * Diagram 23-flow: **Logistic Regression**
+
+### Project Setup for Logistic Regression
+* Diagram Link: https://app.diagrams.net/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/10/diagrams.xml
+* Diagram 9-q:
+* Diagram 11-folder: **Project structure**
