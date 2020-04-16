@@ -358,3 +358,6 @@ features.slice([3,0], [3,-1]);
 * Diagram Link: https://app.diagrams.net/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/10/diagrams.xml
 * Diagram 9-q:
 * Diagram 11-folder: **Project structure**
+
+### Importing Vehicle Data
+* Create index.js and logistic-regression.js inside logistic-regression folder
