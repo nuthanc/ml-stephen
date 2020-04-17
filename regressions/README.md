@@ -401,3 +401,10 @@ features.matMul(weights).sigmoid()
 // All of them are 1
 ```
 * Diagram 9-sigmoid: The above output makes sense because from thid diagram, the z values are way to the right, so they have the value 1
+
+### A touch more Refactoring
+* So in LogisticRegression's gradientDescent and predict method, chain sigmoid to matMul
+* Then in index.js of logistic-regression, create instance of LogisticRegression and call train and predict
+* Give actual datasets value to predict and check whether is correct or not
+* node -r esm index.js 
+* Looks like it's predicting correctly
