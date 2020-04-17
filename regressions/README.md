@@ -364,3 +364,21 @@ features.slice([3,0], [3,-1]);
 
 ### Encoding Label Values
 * Converters option in loadCSV for encoding label values
+
+### Updating Linear Regression to Logistic Regression
+* Copy linear-regression.js to logistic-regression and modify accordingly
+* Comparsion between linear and logistic regression
+* Diagram link: https://app.diagrams.net/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/11/diagrams.xml
+* **Linear Regression**
+* Diagram 27-graph:
+* Diagram 29-slopes:
+* Diagram 28-mse:
+* Diagram 31-vect:
+* **Logistic Regression**
+* Diagram 29-chart: Using Cross entropy instead of MSE
+    * This does the same thing: How badly we guessed the value of m and b
+* Diagram 29-full:
+* But it turns out the derivate of the above equation ends up being identical to **Diagram 32-slopes**
+* Diagram 33-sig:
+* So the only difference is apply the **Sigmoid function**
+
