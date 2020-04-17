@@ -382,3 +382,22 @@ features.slice([3,0], [3,-1]);
 * Diagram 33-sig:
 * So the only difference is apply the **Sigmoid function**
 
+### The Sigmoid Equation with Logistic Regression
+```js
+
+const weights = tf.tensor([
+    [1],
+    [1]
+]);
+
+const features = tf.tensor([
+    [1,120],
+    [1,130],
+    [1,125],
+    [1,140]
+]);
+
+features.matMul(weights).sigmoid()
+// All of them are 1
+```
+* Diagram 9-sigmoid: The above output makes sense because from thid diagram, the z values are way to the right, so they have the value 1
