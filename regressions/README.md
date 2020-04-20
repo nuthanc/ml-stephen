@@ -408,3 +408,7 @@ features.matMul(weights).sigmoid()
 * Give actual datasets value to predict and check whether is correct or not
 * node -r esm index.js 
 * Looks like it's predicting correctly
+
+### Gauging Classification Accuracy
+* Diagram link: https://app.diagrams.net/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/11/diagrams.xml
+* Diagram 34-ref:
