@@ -420,3 +420,12 @@ features.matMul(weights).sigmoid()
 * round function used as 0.5 decision boundary
 * In index.js file, console log regression.test
 * Run node -r esm index.js
+
+### Variable Decision Boundaries
+* Move round function in predict method in LogisticRegression class
+* To apply different decisionBoundary other than 0.5(using round function), use greater function
+* Provide default options.decisionBoundary
+* Let's test out this by going to index.js and providing this option
+* We get an error, because returns a boolean
+* So append cast('float32')
+* So by changing decisonBoundary from 0.5 to 0.6, accuracy went down from 0.88 to 0.86
