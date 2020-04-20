@@ -412,3 +412,11 @@ features.matMul(weights).sigmoid()
 ### Gauging Classification Accuracy
 * Diagram link: https://app.diagrams.net/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/11/diagrams.xml
 * Diagram 34-ref:
+
+### Implementing a Test function
+* Empty the test method in logistic-regression
+* Pass testFeatures to predict
+* Diagram 34-ref: The above will give the probability
+* round function used as 0.5 decision boundary
+* In index.js file, console log regression.test
+* Run node -r esm index.js
