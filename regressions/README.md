@@ -446,3 +446,9 @@ features.matMul(weights).sigmoid()
 
 ### Finishing the Cost Refactor
 * (-Actual + 1) instead of (1 - Actual), as this is easy in tensors
+
+### Plotting Changing Cost History
+* Run using node
+* It's running fine
+* In index.js of logistic-regression, import plot and call it
+* If we change our batchSize to 10, we'll get even faster
