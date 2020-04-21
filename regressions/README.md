@@ -443,3 +443,6 @@ features.matMul(weights).sigmoid()
 * MSE and CE are reffered to as Cost functions in most of the documentation
 * Diagram Copy-4:
 * Diagram 35-cost: **Vectorized equation**
+
+### Finishing the Cost Refactor
+* (-Actual + 1) instead of (1 - Actual), as this is easy in tensors
