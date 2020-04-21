@@ -452,3 +452,7 @@ features.matMul(weights).sigmoid()
 * It's running fine
 * In index.js of logistic-regression, import plot and call it
 * If we change our batchSize to 10, we'll get even faster
+
+### Multinomial Logistic Regression
+* Diagram link: https://app.diagrams.net/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/12/diagrams.xml
+* Diagram 2-binary:
