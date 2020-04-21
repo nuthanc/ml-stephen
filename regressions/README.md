@@ -429,3 +429,11 @@ features.matMul(weights).sigmoid()
 * We get an error, because returns a boolean
 * So append cast('float32')
 * So by changing decisonBoundary from 0.5 to 0.6, accuracy went down from 0.88 to 0.86
+
+### Mean Squared Error vs Cross Entropy
+* How we are getting correct values even when are using *mseHistory* instead of *cross entropy*
+* mseHistory is used for updating the *learning rate*
+* The reason being we can still use MSE to update learning rate(But this time, we are getting lucky)
+* It doesn't always get the global minimum when MSE is used
+* Diagram Copy-3: Wavy function when Sigmoid is used with MSE
+* We will get a fully convex function with Cross entropy
