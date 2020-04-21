@@ -437,3 +437,9 @@ features.matMul(weights).sigmoid()
 * It doesn't always get the global minimum when MSE is used
 * Diagram Copy-3: Wavy function when Sigmoid is used with MSE
 * We will get a fully convex function with Cross entropy
+
+### Refactoring with Cross Entropy
+* In LogisticRegression class, rename mseHistory with costHistory
+* MSE and CE are reffered to as Cost functions in most of the documentation
+* Diagram Copy-4:
+* Diagram 35-cost: **Vectorized equation**
