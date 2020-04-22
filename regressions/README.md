@@ -469,3 +469,15 @@ features.matMul(weights).sigmoid()
 * Diagram 19-mul:
 * Diagram 24-s:
 * Diagram 26-s:
+
+### A Single Instance Approach
+* One single weights tensor containing all 3
+* Diagram 26-s:
+* D 21-j:
+* All of the matrix math ends up being identical
+* D 20-mu:
+* D 21-d:
+* D 22-mu:
+* Even sigmoid is not a problem, since it's a element-wise operation
+* D 23-l:
+* D 24-p:
