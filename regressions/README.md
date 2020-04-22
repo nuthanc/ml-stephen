@@ -456,3 +456,11 @@ features.matMul(weights).sigmoid()
 ### Multinominal Logistic Regression
 * Diagram link: https://app.diagrams.net/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/12/diagrams.xml
 * Diagram 2-binary:
+
+### A Smart Refactor to Multinominal Analysis
+* Diagram 23-refactor:
+* Diagram 5-va:
+* Diagram 4-m:
+* Diagram 6-m:
+* Diagram 7-th:
+* D 8-pr:
