@@ -486,3 +486,8 @@ features.matMul(weights).sigmoid()
 * Create multinominal-logistic-regression folder
 * Update weights inside constructor
 
+### A problem to Test Multinominal Classification
+* Diagram link: https://app.diagrams.net/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/13/diagrams.xml 
+* Diagram 2-q: mpg is fuel efficiency
+* Diagram 1-pr:
+* Diagram 3-la:
