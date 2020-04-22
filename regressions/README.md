@@ -463,4 +463,9 @@ features.matMul(weights).sigmoid()
 * Diagram 4-m:
 * Diagram 6-m:
 * Diagram 7-th:
-* D 8-pr:
+* Diagram 8-pr:
+
+### A Smarter Refactor
+* Diagram 19-mul:
+* Diagram 24-s:
+* Diagram 26-s:
