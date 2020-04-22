@@ -473,11 +473,16 @@ features.matMul(weights).sigmoid()
 ### A Single Instance Approach
 * One single weights tensor containing all 3
 * Diagram 26-s:
-* D 21-j:
+* Diagram 21-j:
 * All of the matrix math ends up being identical
-* D 20-mu:
-* D 21-d:
-* D 22-mu:
+* Diagram 20-mu:
+* Diagram 21-d:
+* Diagram 22-mu:
 * Even sigmoid is not a problem, since it's a element-wise operation
-* D 23-l:
-* D 24-p:
+* Diagram 23-l:
+* Diagram 24-p:
+
+### Refactoring to MultiColumn Weights
+* Create multinominal-logistic-regression folder
+* Update weights inside constructor
+
