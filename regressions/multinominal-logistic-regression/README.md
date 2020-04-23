@@ -44,3 +44,8 @@
 
 ### Training a Multinominal Model
 * Require lodash in index.js
+* Use flatMap function to remove one layer of nesting
+* Print weights to check if it is proper
+* It prints a 4*3 matrix which makes sense for b and 3 features m's along with 3 labels 
+* Put real data from cars.csv and check the predict method
+* Need to pass in the same order as given in dataColumns

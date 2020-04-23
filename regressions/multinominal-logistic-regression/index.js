@@ -3,6 +3,7 @@ const tf = require('@tensorflow/tfjs');
 const loadCSV = require('../load-csv');
 const LogisticRegression = require('./logistic-regression');
 const plot = require('node-remote-plot');
+const _ = require('lodash');
 
 const { features, labels, testFeatures, testLabels } = loadCSV(
   '../data/cars.csv',
@@ -26,19 +27,15 @@ const { features, labels, testFeatures, testLabels } = loadCSV(
   }
 );
 
-console.log(labels);
+const regression = new LogisticRegression(features, _.flatMap(labels), {
+  learningRate: 0.5,
+  iterations: 100,
+  batchSize: 10,
+  decisionBoundary: 0.6,
+});
 
-// const regression = new LogisticRegression(features, labels, {
-//   learningRate: 0.5,
-//   iterations: 100,
-//   batchSize: 10,
-//   decisionBoundary: 0.6,
-// });
-
-// regression.train();
-
-// console.log(regression.test(testFeatures, testLabels));
-
-// plot({
-//   x: regression.costHistory.reverse(),
-// });
+regression.weights.print()
+regression.train();
+regression.predict([
+  [215, 440, 2.16]
+]).print()
