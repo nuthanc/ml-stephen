@@ -49,3 +49,15 @@
 * It prints a 4*3 matrix which makes sense for b and 3 features m's along with 3 labels 
 * Put real data from cars.csv and check the predict method
 * Need to pass in the same order as given in dataColumns
+
+### Marginal vs Conditional Probability
+* Getting 2 1's in predict
+* Entire goal is to take the highest probability
+* Diagram link: https://app.diagrams.net/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/12/diagrams.xml
+* Diagram 24-p:
+* Diagram 9-m:
+* Diagram 10-d:
+* Diagram 11-c: Single characteristic probability
+* Diagram 12-t:
+* **Marginal or Conditional** by summing up to 1 or not
+* Diagram 13-n:
