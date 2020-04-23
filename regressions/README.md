@@ -491,3 +491,8 @@ features.matMul(weights).sigmoid()
 * Diagram 2-q: mpg is fuel efficiency
 * Diagram 1-pr:
 * Diagram 3-la:
+
+### Classifying Continuous Values
+* In multinominal-logistic-regression index.js, labelColumns of mpg
+* converters should be passed with mpg column
+* console log labels to check
