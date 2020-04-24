@@ -99,3 +99,10 @@ guesses.softmax()
 * Diagram 13-image:
 * Diagram 11-gs:
 * Diagram 7-pixels:
+
+### Many Features
+* Diagram 9-vals:
+* Diagram 12-features:
+* Diagram 13-fea:
+* Diagram 6-mn:
+
