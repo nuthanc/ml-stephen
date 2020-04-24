@@ -79,3 +79,7 @@ guesses.softmax()
 //Done on a per row basis
 ```
 * In logistic-regression.js, everywhere replace sigmoid by softmax
+
+### Implementing Accuracy Gauges
+* Diagram link: https://app.diagrams.net/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/13/diagrams.xml
+* Diagram 4-accu:
