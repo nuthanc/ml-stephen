@@ -90,3 +90,7 @@ guesses.softmax()
 * argMax for testLabels in test method
 * notEqual operation for incorrect instead of sub and abs
 * In index.js, regression.test
+
+### Handwriting Recognition
+* Diagram 5-mn:
+* Diagram 6-mn:
