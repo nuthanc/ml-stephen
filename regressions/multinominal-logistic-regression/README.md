@@ -61,3 +61,10 @@
 * Diagram 12-t:
 * **Marginal or Conditional** by summing up to 1 or not
 * Diagram 13-n:
+
+### Sigmoid vs Softmax
+* Diagram 12-eq: Softmax
+* Diagram 10-s:
+* Diagram 14-s:
+
+
