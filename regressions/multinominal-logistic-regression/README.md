@@ -94,3 +94,8 @@ guesses.softmax()
 ### Handwriting Recognition
 * Diagram 5-mn:
 * Diagram 6-mn:
+
+### Greyscale Values
+* Diagram 13-image:
+* Diagram 11-gs:
+* Diagram 7-pixels:
