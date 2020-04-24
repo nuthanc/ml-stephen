@@ -83,3 +83,10 @@ guesses.softmax()
 ### Implementing Accuracy Gauges
 * Diagram link: https://app.diagrams.net/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/13/diagrams.xml
 * Diagram 4-accu:
+
+### Calculating Accuracy
+* predict method doesn't need decisionBoundary anymore in LogisticRegression class
+* argMax along the horizontal axis in predict
+* argMax for testLabels in test method
+* notEqual operation for incorrect instead of sub and abs
+* In index.js, regression.test
