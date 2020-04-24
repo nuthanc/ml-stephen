@@ -67,4 +67,15 @@
 * Diagram 10-s:
 * Diagram 14-s:
 
+### Refactoring Sigmoid to Softmax
+* Diagram 21-d:
+```js
+const guesses = tf.tensor([
+  [15, 23, 22]
+]);
 
+guesses.softmax()
+//This gives conditional probability
+//Done on a per row basis
+```
+* In logistic-regression.js, everywhere replace sigmoid by softmax
