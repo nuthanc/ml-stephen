@@ -90,19 +90,3 @@ guesses.softmax()
 * argMax for testLabels in test method
 * notEqual operation for incorrect instead of sub and abs
 * In index.js, regression.test
-
-### Handwriting Recognition
-* Diagram 5-mn:
-* Diagram 6-mn:
-
-### Greyscale Values
-* Diagram 13-image:
-* Diagram 11-gs:
-* Diagram 7-pixels:
-
-### Many Features
-* Diagram 9-vals:
-* Diagram 12-features:
-* Diagram 13-fea:
-* Diagram 6-mn:
-

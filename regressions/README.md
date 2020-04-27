@@ -357,3 +357,5 @@ features.slice([3,0], [3,-1]);
 ## Logistic README in logistic-regression directory
 
 ## Multinominal README in multinominal-logistic-regression directory
+
+## Handwriting Recognition using Multinominal logistic regression
