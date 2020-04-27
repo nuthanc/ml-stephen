@@ -1,4 +1,5 @@
 ### Handwriting Recognition
+* Diagram link: https://app.diagrams.net/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/13/diagrams.xml
 * Diagram 5-mn:
 * Diagram 6-mn:
 
@@ -23,3 +24,11 @@
 * But we don't to work with a Grid, so we need to flatten it out
 * 784 elements in total
 * Load up 10 images using (0,10) as arguments to mnist.training
+
+### Encoding Label Values
+* Diagram link: https://app.diagrams.net/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/12/diagrams.xml
+* Diagram 7-t:
+* Diagram link: https://app.diagrams.net/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/13/diagrams.xml
+* Diagram 14-labels:
+* Log out our values by mnistData.labels.values
+
