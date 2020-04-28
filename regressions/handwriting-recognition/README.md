@@ -32,3 +32,6 @@
 * Diagram 14-labels:
 * Log out our values by mnistData.labels.values
 
+### Implementing an Accuracy Gauge
+* Diagram 6-mnist:
+* Increase training to 1000 images
