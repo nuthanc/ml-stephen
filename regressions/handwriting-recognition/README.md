@@ -35,3 +35,8 @@
 ### Implementing an Accuracy Gauge
 * Diagram 6-mnist:
 * Increase training to 1000 images
+
+### Unchanging Accuracy
+* Increase 1000 to 5000
+* Iterations to 20
+* Changing parameters and accuracy not showing any change indicates something is very wrong in the algorithm
