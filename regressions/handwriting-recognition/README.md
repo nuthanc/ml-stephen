@@ -92,3 +92,9 @@ console.log(variance) or just variance in browser
 variance.cast('bool').logicalNot().cast('float32')
 
 ```
+
+### Backfilling Variances
+* Remove debugger within processFeatures
+* Add filler code in standardize function
+* Now accuracy is 0.87 when index.js is run
+
