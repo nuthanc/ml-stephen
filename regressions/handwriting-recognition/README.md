@@ -98,3 +98,7 @@ variance.cast('bool').logicalNot().cast('float32')
 * Add filler code in standardize function
 * Now accuracy is 0.87 when index.js is run
 
+### Handling Large Datasets
+* Easiest way to increase our accuracy is to increase the number in our training data set
+* Let's try loading all 60000 images
+* Also increase testing pool to 1000
