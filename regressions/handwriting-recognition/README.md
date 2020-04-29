@@ -40,3 +40,36 @@
 * Increase 1000 to 5000
 * Iterations to 20
 * Changing parameters and accuracy not showing any change indicates something is very wrong in the algorithm
+
+### Debugging the Calculation Process
+* node --inspect-brk index.js
+* Open Chrome and navigate to chrome://inspect
+* Click on Inspect
+* Breakpoint at regression.train
+* Click on Blue arrow on top RHS
+* Down Arrow to Step into the function
+* Step Over till gradientDescent in the train method
+* Then in console, type the variable to get its value
+```js
+batchQuantity
+this.labels.print()
+this.weights.print()
+this.features.print() //The problem is here, where we see it's not a number(NaN)
+```
+* So let's start debugging at processFeatures
+* Close the debugger
+* Add **debugger** statement in processFeatures
+* Run the same node inspect command
+* Unset the previous breakpoint and play and it'll land at processFeatures
+* In debugger console
+```js
+features.print()
+//All 0's in top and bottom which makes sense from Diagram 9-val
+//Step over to standardize method
+//Step into standardize method
+mean.print() and variance.print()
+features.sub(mean).div(variance.pow(0.5)).print()
+//The above line is causing the problem
+```
+* Diagram link: https://app.diagrams.net/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/13/diagrams.xml
+* Diagram 9-val
