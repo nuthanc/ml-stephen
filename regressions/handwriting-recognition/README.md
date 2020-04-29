@@ -102,3 +102,10 @@ variance.cast('bool').logicalNot().cast('float32')
 * Easiest way to increase our accuracy is to increase the number in our training data set
 * Let's try loading all 60000 images
 * Also increase testing pool to 1000
+* Takes a lot of time
+* Check in Activity Monitor, node memory which is tremendous
+* Diagram 16-mem: If node crashes(in my case didn't)
+```js
+node --max-old-space-size=4096 index.js
+```
+* Accuracy now 0.876
