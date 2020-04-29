@@ -73,3 +73,22 @@ features.sub(mean).div(variance.pow(0.5)).print()
 ```
 * Diagram link: https://app.diagrams.net/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/13/diagrams.xml
 * Diagram 9-val
+
+### Dealing with Zero Variances
+* Diagram 15-options: Possible solutions
+```js
+const features = tf.tensor([
+  [0, 20, 40],
+  [0, 20.5, 80],
+  [0, 20.3, 90]
+])
+
+const {mean, variance} = tf.moments(features, 0);
+console.log(variance) or just variance in browser
+//Browser we won't see this issue, as this is a different environment than Node
+//Browser will automatically turn 0 to 1
+
+//Workaround
+variance.cast('bool').logicalNot().cast('float32')
+
+```
