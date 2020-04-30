@@ -109,3 +109,12 @@ variance.cast('bool').logicalNot().cast('float32')
 node --max-old-space-size=4096 index.js
 ```
 * Accuracy now 0.876
+
+### Minimizing Memory Usage
+* memory.js to test memory usage
+* range function creates an array from the first index to not including the last index
+* node --inspect-brk memory.js
+* Play button till it reaches debugger statement
+* Hover over data and can inspect all the elements inside it
+* Go to Memory tab->Heap Snapshot->Take Snapshot
+* Constructor which gives types of objects created
