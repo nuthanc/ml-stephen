@@ -118,3 +118,13 @@ node --max-old-space-size=4096 index.js
 * Hover over data and can inspect all the elements inside it
 * Go to Memory tab->Heap Snapshot->Take Snapshot
 * Constructor which gives types of objects created
+
+### Creating Memory Snapshots
+* Click on Shallow column twice to sort from largest to smallest
+* Shallow size is the bytes used by each of the different objects
+* Click on array's 2nd element which shows data in Retainers
+* Take a screenshot
+* Comment out randoms and rerun the program
+* Advance execution to the debugger statement and take a Snapshot
+* Array memory from 16MB to 8MB
+
