@@ -165,5 +165,9 @@ node --inspect-brk --max-old-space-size=4096 index.js
 * Brand new features and encodedLabels values with mnistData
 * After features and encodedLables are assigned, there is no point to hold *mnistData*
 
+### Releasing References
+* Wrap mnistData within a function called loadData
+
+
 
 
