@@ -145,4 +145,3 @@ node --max-old-space-size=4096 index.js
   * Array class or object and the other is the data structure that is actually holding the values
 * So size of Array is 32 which is its actual size(Shallow size) and the Retained size is the reference to the actual data structure
 * Retained size is the reference to the actual array size
-
