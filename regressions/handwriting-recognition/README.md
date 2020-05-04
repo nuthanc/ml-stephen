@@ -128,3 +128,21 @@ node --max-old-space-size=4096 index.js
 * Advance execution to the debugger statement and take a Snapshot
 * Array memory from 16MB to 8MB
 
+### The Javascript Garbage Collector
+* The memory usage of Array went down significantly after commenting out the return statement
+* This is because JS garbage collector
+* The Garbage collector kicked in the second time we ran with the commented statement
+* randoms holds a reference to the array
+* Garbage collector kicks in when there is no longer reference the values that has been created
+* Outside of loadData, there is no way to reference the variable randoms
+* Diagram link: https://app.diagrams.net/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/13/diagrams.xml
+* Diagram 18-node:
+* We had a reference to the big array when randoms was returned and assigned to data
+* Diagram 17-mem: When return is commented
+
+### Shallow vs Retained Memory
+* Diagram 19-array: Difference between Array and array in Memory tab of debugger
+  * Array class or object and the other is the data structure that is actually holding the values
+* So size of Array is 32 which is its actual size(Shallow size) and the Retained size is the reference to the actual data structure
+* Retained size is the reference to the actual array size
+
