@@ -145,3 +145,25 @@ node --max-old-space-size=4096 index.js
   * Array class or object and the other is the data structure that is actually holding the values
 * So size of Array is 32 which is its actual size(Shallow size) and the Retained size is the reference to the actual data structure
 * Retained size is the reference to the actual array size
+
+### Measuring Memory Usage
+* First thing is to take a Memory snapshot
+* In logistic-regression train method, add a debugger statement 
+* Why the above location
+  * First half of the program's Memory snapshot(First Initial data loading)
+* Run node inspect
+```sh
+node --inspect-brk --max-old-space-size=4096 index.js
+```
+* Take a Memory snapshot
+* Sort by Shallow size by double-clicking it
+![alt text](mbefore.png)
+* Internal array is not relevant to us
+* So check *object elements*
+* Looks like one of the largest consumers of memory might be features array
+* Two entries of values labels and values images of mnist data Object elements
+* Brand new features and encodedLabels values with mnistData
+* After features and encodedLables are assigned, there is no point to hold *mnistData*
+
+
+
