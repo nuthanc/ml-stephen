@@ -189,3 +189,6 @@ node --inspect-brk --max-old-space-size=4096 index.js
 tf.ENV.registry.webgl.backend.texData.data
 //This returns a WeakMap
 ```
+
+### Cleaning Up Tensors with Tidy
+* Everything gets cleaned up if it's inside tf.tidy except the returned tensor
