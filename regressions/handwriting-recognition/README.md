@@ -168,6 +168,8 @@ node --inspect-brk --max-old-space-size=4096 index.js
 ### Releasing References
 * Wrap mnistData within a function called loadData
 
+### Measuring Footprint Reduction
+![alt text](mafter.png)
 
 
 
