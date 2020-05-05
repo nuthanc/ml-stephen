@@ -178,3 +178,14 @@ node --inspect-brk --max-old-space-size=4096 index.js
 * Increase training data to 60000
 * Take a memory snapshot
 * From snapshot, we see 120000 tensors were created
+
+### Tensorflows Eager Memory Usage 
+* Diagram link: https://app.diagrams.net/#Uhttps://raw.githubusercontent.com/StephenGrider/MLCasts/master/diagrams/13/diagrams.xml
+* Diagram 20-tf: Tensorflow maintains a reference
+* In gradientDescent method of linear-regression, the output of matMul is a tensor and applying softmax produces another tensor
+* Even though it comes out of the gradientDescent method, the tensorflow still keeps a reference
+* Backend digging into tensorflow
+```js
+tf.ENV.registry.webgl.backend.texData.data
+//This returns a WeakMap
+```
