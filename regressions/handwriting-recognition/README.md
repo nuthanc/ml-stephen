@@ -192,3 +192,6 @@ tf.ENV.registry.webgl.backend.texData.data
 
 ### Cleaning Up Tensors with Tidy
 * Everything gets cleaned up if it's inside tf.tidy except the returned tensor
+
+### Implementing TF tidy
+* 
