@@ -171,5 +171,10 @@ node --inspect-brk --max-old-space-size=4096 index.js
 ### Measuring Footprint Reduction
 ![alt text](mafter.png)
 
-
-
+### Optimization Tensorflow Memory Usage
+* Delete the debugger in train function
+* Add debugger right after train call in index.js
+* Run node inspect
+* Increase training data to 60000
+* Take a memory snapshot
+* From snapshot, we see 120000 tensors were created

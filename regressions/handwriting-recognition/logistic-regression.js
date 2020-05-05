@@ -45,7 +45,6 @@ class LogisticRegression {
 
         this.gradientDescent(featureSlice, labelSize);
       }
-      debugger;
       this.recordCost();
       this.updateLearningRate();
     }
