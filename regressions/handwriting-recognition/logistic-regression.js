@@ -24,7 +24,7 @@ class LogisticRegression {
       .matMul(differences)
       .div(features.shape[0]);
 
-    this.weights = this.weights.sub(slopes.mul(this.options.learningRate));
+    return this.weights.sub(slopes.mul(this.options.learningRate));
   }
 
   train() {
@@ -37,13 +37,15 @@ class LogisticRegression {
         const startIndex = j * this.options.batchSize;
         const { batchSize } = this.options;
 
-        const featureSlice = this.features.slice(
-          [startIndex, 0],
-          [batchSize, -1]
-        );
-        const labelSize = this.labels.slice([startIndex, 0], [batchSize, -1]);
+        this.weights = tf.tidy(() => {
+          const featureSlice = this.features.slice(
+            [startIndex, 0],
+            [batchSize, -1]
+          );
+          const labelSize = this.labels.slice([startIndex, 0], [batchSize, -1]);
 
-        this.gradientDescent(featureSlice, labelSize);
+          return this.gradientDescent(featureSlice, labelSize);
+        });
       }
       this.recordCost();
       this.updateLearningRate();

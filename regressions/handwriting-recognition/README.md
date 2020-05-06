@@ -194,4 +194,10 @@ tf.ENV.registry.webgl.backend.texData.data
 * Everything gets cleaned up if it's inside tf.tidy except the returned tensor
 
 ### Implementing TF tidy
-* 
+* Wrap everything inside gradientDescent within tf.tidy and assign it to some variable or constant
+
+### Tidying the Training Loop
+* Wrap Slices and gradientDescent in train method with tf.tidy
+* Return weights from gradientDescent and tf.tidy
+* Assign return of tf.tidy to this.weights
+* Run node inspect
