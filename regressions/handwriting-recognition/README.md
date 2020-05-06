@@ -205,3 +205,7 @@ tf.ENV.registry.webgl.backend.texData.data
 ### Measuring Reduced Memory Usage
 * Now Array memory usage drops by 3 times than earlier
 ![alt text](comp.png)
+
+### One More Optimization
+* In recordCost, wrap up with tf.tidy
+* Take one more memory snapshot to check the changes
