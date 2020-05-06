@@ -201,3 +201,7 @@ tf.ENV.registry.webgl.backend.texData.data
 * Return weights from gradientDescent and tf.tidy
 * Assign return of tf.tidy to this.weights
 * Run node inspect
+
+### Measuring Reduced Memory Usage
+* Now Array memory usage drops by 3 times than earlier
+![alt text](comp.png)
