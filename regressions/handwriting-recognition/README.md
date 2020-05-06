@@ -221,4 +221,12 @@ tf.ENV.registry.webgl.backend.texData.data
 * Plot is empty, so check by console logging regression.costHistory
 * Every single entry is NaN
 
+### NaN in Cost History
+* Troubleshooting in recordCost of logistic-regression by adding a debugger statement
+* Run node inspect
+* Step over 2 or 3 times, and console log guesses or any other values to check for NaN
+* Problem with **log 0 or log -10**
+
+
+
 

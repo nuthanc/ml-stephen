@@ -92,6 +92,7 @@ class LogisticRegression {
 
   recordCost() {
     const cost = tf.tidy(() => {
+      debugger;
       const guesses = this.features.matMul(this.weights).softmax();
 
       const termOne = this.labels.transpose().matMul(guesses.log());
