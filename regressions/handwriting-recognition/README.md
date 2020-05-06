@@ -209,3 +209,6 @@ tf.ENV.registry.webgl.backend.texData.data
 ### One More Optimization
 * In recordCost, wrap up with tf.tidy
 * Take one more memory snapshot to check the changes
+
+### Final Memory Report
+* Also can check in Activity Monitor of node from 14GB to 1.7GB
