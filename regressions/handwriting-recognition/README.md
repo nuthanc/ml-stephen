@@ -212,3 +212,13 @@ tf.ENV.registry.webgl.backend.texData.data
 
 ### Final Memory Report
 * Also can check in Activity Monitor of node from 14GB to 1.7GB
+
+### Plotting Cost History
+* Plot Cost History to check how incorrect we are over each iteration
+* At 60,000 training samples, accuracy was 0.876
+* plot function at the bottom in index.js
+* With 10,000 training samples, accuracy is 0.848
+* Plot is empty, so check by console logging regression.costHistory
+* Every single entry is NaN
+
+
