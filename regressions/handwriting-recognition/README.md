@@ -244,4 +244,5 @@ tf.ENV.registry.webgl.backend.texData.data
 * Watch the plot and decrease or increase the iterations
 * Change iterations to 40
 
-
+### Loading CSV files
+* New project of loadCSV

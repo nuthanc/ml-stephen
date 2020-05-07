@@ -160,3 +160,6 @@ Diagram order:
 
 ## Implementation of Gradient Descent
 * Checkout regressions folder
+
+### Loading CSV files
+* New project of loadCSV
