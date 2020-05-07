@@ -227,6 +227,11 @@ tf.ENV.registry.webgl.backend.texData.data
 * Step over 2 or 3 times, and console log guesses or any other values to check for NaN
 * Problem with **log 0 or log -10**
 
+### Fixing Cost History
+* Remove debugger
+* Add another trick of add(1e-7) while calculating termTwo and termOne
+* Thereby taking log of close to 0 but not 0
+* Run node -r esm index.js
 
 
 
