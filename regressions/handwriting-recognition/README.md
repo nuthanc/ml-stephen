@@ -234,4 +234,4 @@ tf.ENV.registry.webgl.backend.texData.data
 * Run node -r esm index.js
 
 ### Massaging Learning Parameters
-* 
+* Play around with model parameters
