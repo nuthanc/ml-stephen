@@ -233,5 +233,5 @@ tf.ENV.registry.webgl.backend.texData.data
 * Thereby taking log of close to 0 but not 0
 * Run node -r esm index.js
 
-
-
+### Massaging Learning Parameters
+* 
