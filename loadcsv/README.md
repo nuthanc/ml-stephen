@@ -4,3 +4,6 @@
 * npm init
 * npm install lodash shuffle-seed
 * New file of load-csv
+
+### A Test Dataset
+* New file of data.csv2
