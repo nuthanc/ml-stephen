@@ -235,3 +235,13 @@ tf.ENV.registry.webgl.backend.texData.data
 
 ### Massaging Learning Parameters
 * Play around with model parameters
+
+### Improving Model Accuracy
+* Increase training set to 60000(The more the data, the better the result)
+* Iterations to 80 and batchSize to 500
+* Testing set to 10000
+* When Iterations are increased, batchSize can also be increased
+* Watch the plot and decrease or increase the iterations
+* Change iterations to 40
+
+
