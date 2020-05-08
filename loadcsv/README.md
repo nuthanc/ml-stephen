@@ -7,3 +7,7 @@
 
 ### A Test Dataset
 * New file of data.csv2
+
+### Reading Files from Disk
+* Create loadCSV function in load-csv.js
+* Require builtin fs to load files
