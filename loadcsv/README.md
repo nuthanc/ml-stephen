@@ -19,4 +19,6 @@
 * This is for bad csv files with trailing empty spaces
 
 ### Parsing Number Values
-* 
+
+### Custom Value Parsing
+* Expand options argument of converters to do custom value parsing
