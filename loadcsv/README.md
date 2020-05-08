@@ -13,3 +13,7 @@
 
 ### Splitting into Columns
 * Using data.split and map
+
+### Dropping Trailing Columns
+* Require lodash and use dropRightWhile
+* This is for bad csv files with trailing empty spaces
