@@ -12,4 +12,4 @@
 * Create loadCSV function in load-csv.js
 
 ### Splitting into Columns
-* 
+* Using data.split and map
