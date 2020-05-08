@@ -10,4 +10,6 @@
 
 ### Reading Files from Disk
 * Create loadCSV function in load-csv.js
-* Require builtin fs to load files
+
+### Splitting into Columns
+* 
