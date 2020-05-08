@@ -17,3 +17,6 @@
 ### Dropping Trailing Columns
 * Require lodash and use dropRightWhile
 * This is for bad csv files with trailing empty spaces
+
+### Parsing Number Values
+* 
