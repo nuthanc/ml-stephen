@@ -27,3 +27,8 @@
 * Pass dataColumns and labelColumns
 * Helper function of extractColumns
 * Dump the first row of headers using shift
+
+### Shuffling Data via Seed Phrase
+* Add shuffle true to loadCSV call
+* Require shuffle-seed
+* The above for shuffling data and labels in the exact same order
