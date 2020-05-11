@@ -22,3 +22,8 @@
 
 ### Custom Value Parsing
 * Expand options argument of converters to do custom value parsing
+
+### Extracting Data Columns
+* Pass dataColumns and labelColumns
+* Helper function of extractColumns
+* Dump the first row of headers using shift
