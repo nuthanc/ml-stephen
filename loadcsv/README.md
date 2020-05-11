@@ -32,3 +32,11 @@
 * Add shuffle true to loadCSV call
 * Require shuffle-seed
 * The above for shuffling data and labels in the exact same order
+
+### Splitting Test and Training
+* Add splitTest argument
+```js
+{ features: data, labels: labels}
+//Can be shortened using es2015 syntax
+{ features: data, labels}
+```
